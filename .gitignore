@@ -1,18 +1,6 @@
 # Exclude the .htaccess file
 .htaccess
 
-# Exclude any PSD/AI source
-*.psd
-*.ai
- 
-
-# Exclude the build products
-build/*
-*.[oa]
-
-# Exclude OS X folder attributes
-.DS_Store
-
 # Exclude .idea FOLDER
 .idea
  
@@ -23,10 +11,6 @@ build/*
 
 # Exclude log files
 *.log
-
-# Exclude Fonts
-# fonts/
-
 
 # Exclude PHPSTORM .idea folder
 .idea
