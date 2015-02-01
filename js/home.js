@@ -41,7 +41,6 @@
             beforepagemain.style.display = "none";
             flag = 1;
 
-            
         }
     }
 
@@ -53,14 +52,16 @@
     if(firstpage == 0){
 
     main = document.getElementById("main");
-    main.style.visibility = "visible";
+    menu = document.getElementsByClassName("menu");
     content = document.getElementById("content");
-    content.style.transform = "translate(0px,0px)";
-    content.style.transform = "-webkit-translate(0px,0px)";
-    content.style.transitionDuration = "2s";
     submenu = document.getElementsByClassName("submenu");
     text = document.getElementsByClassName("text");
     beforepagemain = document.getElementById("beforepagemain");
+    main.style.visibility = "visible";
+    content.style.transform = "translate(0px,0px)";
+    content.style.transform = "-webkit-translate(0px,0px)";
+    content.style.transitionDuration = "2s";
+
         for (i = 0; i < submenu.length; i++) {
             submenu[i].style.position = 'initial';
             submenu[i].style.transitionDuration = "0s";
@@ -68,7 +69,6 @@
             text[i].style.opacity = "1";
             beforepagemain.style.display = "none";
             flag = 1;
-
         }
 
     }
