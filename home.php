@@ -19,17 +19,18 @@ require_once("includes/includes.php");
 ?>
 <script>
     linksite= '<?php echo $get_referer?>';
-    var pattern=/makan1.php$/;
+
+    var pattern=/makan1/;
+    alert(pattern.test(linksite))
     if(pattern.test(linksite))
     {
-        makanalert=1;
+        alert('true')
     else
         {
-        makanalert=0;
+        alert('false')
         }
 
     }
-    alert(makanalert);
 </script>
 
 
