@@ -10,38 +10,36 @@ require_once("includes/includes.php");
 <script  src="js/jquery-1.10.2.js"></script>
 <link href="css/home.css" rel="stylesheet" />
 <script src="js/home.js"></script>
+    <?php
+    $get_referer = $_SERVER['HTTP_REFERER'];
+    ?>
+    <script>
+        linksite = '<?php echo $get_referer?>';
+
+        var pattern1 = /makan1\.php/;
+        var pattern2 = /aboutus\.php/;
+        var pattern3 = /services\.php/;
+        var pattern4 = /ourproducts\.php/;
+
+        if (pattern1.test(linksite)) {
+            firstpage = 1;
+
+        }
+        else if (pattern2.test(linksite)) {
+            firstpage = 0;
+        }
+        else if (pattern3.test(linksite)) {
+            firstpage = 0;
+        }
+        else if (pattern4.test(linksite)) {
+            firstpage = 0;
+        }
+
+
+    </script>
 
 </head>
 <body onload="bodycontentload()">
-
-<?php
-    $get_referer = $_SERVER['HTTP_REFERER'];
-?>
-<script>
-    linksite= '<?php echo $get_referer?>';
-
-    var pattern1=/makan1\.php/;
-    var pattern2=/aboutus\.php/;
-    var pattern3=/services\.php/;
-    var pattern4=/ourproducts\.php/;
-
-    if(pattern1.test(linksite)) {
-        firstpage=1;
-    }
-    else if(pattern2.test(linksite)) {
-        firstpage=0;
-        }
-    else if(pattern3.test(linksite)) {
-        firstpage=0;
-    }
-    else if(pattern4.test(linksite)) {
-        firstpage=0;
-    }
-
-
-</script>
-
-
 
 <div id="logocontainer">
 <a href="makan1.php">
