@@ -20,17 +20,24 @@ require_once("includes/includes.php");
 <script>
     linksite= '<?php echo $get_referer?>';
 
-    var pattern=/makan1/;
-    alert(pattern.test(linksite))
-    if(pattern.test(linksite))
-    {
-        alert('true')
-    else
-        {
-        alert('false')
-        }
+    var pattern1=/makan1\.php/;
+    var pattern2=/aboutus\.php/;
+    var pattern3=/services\.php/;
+    var pattern4=/ourproducts\.php/;
 
+    if(pattern1.test(linksite)) {
+        firstpage=1;
     }
+    else if(pattern2.test(linksite)) {
+        firstpage=0;
+        }
+    else if(pattern3.test(linksite)) {
+        firstpage=0;
+    }
+    else if(pattern4.test(linksite)) {
+        firstpage=0;
+    }
+
 </script>
 
 
