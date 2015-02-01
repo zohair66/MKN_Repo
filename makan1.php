@@ -29,4 +29,4 @@
 </body>
 </html>
 
-<script></script>
+<script>a=2</script>
