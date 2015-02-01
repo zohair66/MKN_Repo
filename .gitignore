@@ -27,8 +27,6 @@ build/*
 # Exclude Fonts
 # fonts/
 
-# Exclude Images
-# img/
 
 # Exclude PHPSTORM .idea folder
 .idea
