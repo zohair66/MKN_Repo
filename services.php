@@ -88,5 +88,3 @@ require_once("includes/includes.php");
 <p class="footer" id="footertelefon">تلفن:32352016-031 تلفکس:32362237-031</p>
 </body>
 </html>
-
-<img>
