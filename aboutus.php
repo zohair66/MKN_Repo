@@ -40,6 +40,7 @@ require_once("includes/includes.php");
 
     </script>
 
+
 </head>
 <body onload="bodycontentload()">
 <div id="logocontainer">

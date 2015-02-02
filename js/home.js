@@ -1,5 +1,6 @@
 ﻿function bodycontentload() {
 
+    
     submenu = document.getElementsByClassName("submenu");
     menu = document.getElementsByClassName("menu");
     main = document.getElementById("main");
