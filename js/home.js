@@ -1,5 +1,6 @@
 ﻿function bodycontentload() {
-    if (firstpage == 1){
+
+    
     submenu = document.getElementsByClassName("submenu");
     menu = document.getElementsByClassName("menu");
     main = document.getElementById("main");
@@ -15,7 +16,7 @@
 
     var myVar = setInterval(function () {
         movemenu()
-    }, 200);
+    }, 100);
 
     function movemenu() {
         menurect = menu[k].getBoundingClientRect();
@@ -31,6 +32,7 @@
     beforepagemain = document.getElementById("beforepagemain");
     setTimeout(initializefunction, 1800);
 
+    beforepagemain.style.display = "none";
     function initializefunction() {
         for (i = 0; i < menu.length; i++) {
 
@@ -38,7 +40,7 @@
             submenu[i].style.transitionDuration = "0s";
             submenu[i].style.transform = "translate(-40px,40px)";
             text[i].style.opacity = "1";
-            beforepagemain.style.display = "none";
+
             flag = 1;
 
         }
@@ -48,7 +50,7 @@
     content.style.transform = "translate(0px,0px)";
     content.style.transform = "-webkit-translate(0px,0px)";
     content.style.transitionDuration = "2s";
-}
+
     if(firstpage == 0){
 
     main = document.getElementById("main");
