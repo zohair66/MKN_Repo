@@ -57,7 +57,7 @@ $fullname = $_SESSION['fname'] . " " . $_SESSION['lname'];
             if (isset( $_GET["action"]) and $_GET["action"] == "dashboard"){
                 include('dashboard.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "HomeEdit") {
-//                AA
+                include('homedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "AboutusEdit"){
 //                BB
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "ServicesEdit"){
