@@ -14,6 +14,7 @@ require_once("includes/includes.php");
     $get_referer = $_SERVER['HTTP_REFERER'];
     ?>
     <script>
+        firstpage = 1;
         linksite = '<?php echo $get_referer?>';
 
         var pattern1 = /makan1\.php/;
@@ -23,7 +24,6 @@ require_once("includes/includes.php");
 
         if (pattern1.test(linksite)) {
             firstpage = 1;
-
         }
         else if (pattern2.test(linksite)) {
             firstpage = 0;
