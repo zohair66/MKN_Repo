@@ -9,6 +9,36 @@ require_once("includes/includes.php");
 <title>ماکان</title>
 <link href="css/aboutus.css" rel="stylesheet" />
 <script src="js/aboutus.js"></script>
+    <?php
+    if (isset($_SERVER['HTTP_REFERER'])){
+    $get_referer = $_SERVER['HTTP_REFERER'];
+    ?>
+    <script>
+        firstpage = 1;
+        linksite = '<?php echo $get_referer?>';
+
+        var pattern1 = /makan1\.php/;
+        var pattern2 = /services\.php/;
+        var pattern3 = /ourproducts\.php/;
+        var pattern4 = /home\.php/;
+
+        if (pattern1.test(linksite)) {
+            firstpage = 1;
+        }
+        else if (pattern2.test(linksite)) {
+            firstpage = 0;
+        }
+        else if (pattern3.test(linksite)) {
+            firstpage = 0;
+        }
+        else if (pattern4.test(linksite)) {
+            firstpage = 0;
+        }
+        <?php
+        }
+        ?>
+
+    </script>
 
 </head>
 <body onload="bodycontentload()">
@@ -22,9 +52,16 @@ require_once("includes/includes.php");
 <div id="main">
 <div id="home" class="menu" onmouseenter="select1()"><a href="home.php" id="subhome" class="submenu"></a><p class="text">خانه</p></div>
 <div id="aboutus" class="menu" onmouseenter="select2()" ><a href="#" id="subaboutus" class="submenu"></a><p class="text">درباره ما</p></div>
-<div id="service" class="menu" onmouseenter="select3()"><a href="#" id="subservice"  class="submenu"></a><p class="text">خدمات ما</p></div>
-<div id="products" class="menu" onmouseenter="select4()"><a href="#" id="subproducts"class="submenu"></a><p class="text">نمونه کارها</p></div>
-<div id="blog" class="menu" onmouseenter="select5()"><a href="#" id="subblog" class="submenu"></a><p class="text">خانه</p></div>
+    <div id="service" class="menu" onmouseenter="select3()"><a href="services.php" id="subservice" class="submenu"></a>
+
+        <p class="text">خدمات ما</p></div>
+    <div id="products" class="menu" onmouseenter="select4()"><a href="ourproducts.php" id="subproducts"
+                                                                class="submenu"></a>
+
+        <p class="text">نمونه کارها</p></div>
+    <div id="blog" class="menu" onmouseenter="select5()"><a href="#" id="subblog" class="submenu"></a>
+
+        <p class="text">آخرین اخبار</p></div>
 <div id="mail" class="menu" onmouseenter="select6()"><a href="#" id="submail" class="submenu"></a><p class="text">ارتباط با ما</p></div>
 </div>
 <div id="beforepagemain">
