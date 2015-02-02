@@ -11,7 +11,8 @@ require_once("includes/includes.php");
 <link href="css/home.css" rel="stylesheet" />
 <script src="js/home.js"></script>
     <?php
-    $get_referer = $_SERVER['HTTP_REFERER'];
+    if (isset($_SERVER['HTTP_REFERER'])){
+        $get_referer = $_SERVER['HTTP_REFERER'];
     ?>
     <script>
         firstpage = 1;
@@ -34,7 +35,9 @@ require_once("includes/includes.php");
         else if (pattern4.test(linksite)) {
             firstpage = 0;
         }
-
+        <?php
+        }
+        ?>
 
     </script>
 
