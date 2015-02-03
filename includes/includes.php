@@ -10,6 +10,7 @@ require_once("classes/aboutus1.php");
 require_once("classes/aboutus2.php");
 require_once("classes/services.php");
 require_once("classes/ourproducts.php");
+require_once("classes/news.php");
 require_once("classes/users.php");
 require_once("classes/forms.php");
 require_once("PHPMailer/class.phpmailer.php");

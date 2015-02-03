@@ -13,5 +13,5 @@ require_once("../includes/includes.php");
 
 // echo $_SERVER['HTTP_REFERER'];
 
-$Services = Services::getAllServiceRecordes();
-var_dump($Services);
+$news=news::getAllNews();
+var_dump($news);

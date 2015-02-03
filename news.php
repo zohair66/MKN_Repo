@@ -101,20 +101,20 @@ require_once("includes/includes.php");
         <div id="newscontent">
 
             <?php
-            $products = Ourproducts::getAllProducts();
-            $product_nums = (Ourproducts::getAllProducts()) ? count(Ourproducts::getAllProducts()) : 0;
-            if ($product_nums > 0) {
-                foreach ($products as $product) {
+            $news = news::getAllNews();
+            $news_nums = (news::getAllNews()) ? count(news::getAllNews()) : 0;
+            if ($news_nums > 0) {
+                foreach ($news as $new) {
                     ?>
                     <div class="pictureandtext">
-                        <div class="picture"><img src="<?php echo "$product->piclink" ?>"/></div>
+                        <div class="picture"><img src="<?php echo "$new->piclink" ?>"/></div>
                         <div class="newstext">
-                            <?php echo "$product->text" ?></div>
+                            <?php echo "$new->content" ?></div>
                     </div>
                 <?php
                 }
             } else {
-                echo "هیچ گونه نمونه کاری وجود ندارد";
+                echo "اخباری وجود ندارد";
             }
             ?>
 
