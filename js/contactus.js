@@ -174,6 +174,49 @@ function movefunction() {
         }
     }
 }
+function Invalidname(textbox) {
+    var name = document.getElementById('text1').value;
+    var pattern = /[آ-ی]{2,}\s[آ-ی]{2,}/;
+    if (textbox.value == '') {
+        textbox.setCustomValidity('نام خود  را وارد کنید');
+    }
+    else if (!pattern.test(name)) {
+
+        textbox.setCustomValidity('نام خود را به درستی وارد کنید');
+    }
+    else {
+        textbox.setCustomValidity('');
+    }
+    return true;
+}
+function Invalidtel(textbox) {
+    var name = document.getElementById('text2').value;
+    var patterntel = /^\d{11}/;
+    if (textbox.value == '') {
+        textbox.setCustomValidity('شماره تلفن خود را وارد کنید');
+    }
+    else if (!patterntel.test(name)) {
+
+        textbox.setCustomValidity('شماره تلفن خود را به درستی وارد کنید');
+    }
+    else {
+        textbox.setCustomValidity('');
+    }
+    return true;
+}
+function Invalidmail(textbox) {
+    if (textbox.value == '') {
+        textbox.setCustomValidity('ایمیل خود را وارد کنید');
+    }
+    else if (textbox.validity.typeMismatch) {
+
+        textbox.setCustomValidity('ایمیل خود را به درستی وارد کنید');
+    }
+    else {
+        textbox.setCustomValidity('');
+    }
+    return true;
+}
 
 
 

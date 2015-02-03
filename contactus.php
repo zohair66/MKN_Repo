@@ -97,87 +97,98 @@ require_once("includes/includes.php");
     $homecontent1 = homecontent1::getAllHomeContent1();
     ?>
     <div id="content">
-        <div id="homecontent1" class="homecontent">
-            <p id="homecontent1title" class="homecontenttitle"><?php echo $homecontents[0]->title ?></p>
-
-            <div id="homecontent1picture" class="homecontent1">
-                <img src="<?php echo $homecontent1[0]->picturelink ?>">
+        <div class="contactuscontent">
+            <div class="contentheaders"> محل دفتر بر روی نقشه</div>
+            <div class="contenttext"></div>
+        </div>
+        <div class="contactuscontent">
+            <div class="contentheaders"></div>
+            <div class="contenttext">اصفهان خیابان طیب خیابان میرداماد بعد از چهار راه زاهد طبقه فوقانی دفتر اسناد رسمی
+                410
             </div>
-            <div id="homecontent1text" class="homecontent1"><?php echo $homecontent1[0]->content ?></div>
-            <a href="<?php echo $homecontents[0]->link ?>" id="homecontent1more" class="homecontentmore">اطلاعات
-                بیشتر</a>
+        </div>
+        <div class="contactuscontent">
+            <div class="contentheaders">تماس با ما</div>
+            <div class="contenttext">
+                <div id="form">
+                    <form action="makan1.html" method="get" enctype="text/plain" onsubmit="return validate();">
+
+                        <table>
+                            <tr>
+                                <td>نام و نام خانوادگی
+                                </td>
+                                <td>
+                                    <input type="text" name="text1" id="text1" oninvalid="Invalidname(this);"
+                                           oninput="Invalidname(this);"
+                                           placeholder="فارسی" required="required"/><span id="namespan"
+                                                                                          style="color: red"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>شماره تماس (موبایل)
+                                </td>
+                                <td>
+                                    <input type="text" name="text2" id="text2" oninvalid="Invalidtel(this);"
+                                           oninput="Invalidtel(this);"
+                                           placeholder="09130000000" required="required"/><span id="telspan"
+                                                                                                style="color: red"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>ایمیل
+                                </td>
+                                <td>
+                                    <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                                           oninvalid="Invalidmail(this);"
+                                           oninput="Invalidmail(this);" required="required"/><span id="emailspan"
+                                                                                                   style="color: red"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>شخص حقیق یا حقوقی
+                                </td>
+                                <td>
+                                    <select name="s1">
+                                        <option value="1">حقیقی</option>
+                                        <option value="2">حقوقی</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>آیا مایل به دریافت ایمیل هستید؟
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="checkbox" checked="checked"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>خلاصه ای از سایت مورد نظر
+                                </td>
+                                <td>
+                                    <textarea name="textarea" maxlength="30"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" name="send" value="ارسال"/>
+                                    <input type="reset" name="reset " value="نوسازی"/>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </form>
 
         </div>
-        <div id="homecontent2" class="homecontent">
-
-            <p id="homecontent2title" class="homecontenttitle"><?php echo $homecontents[1]->title ?></p>
-
-            <div id="homecontent2table">
-
-                <?php
-                $homecontent2 = homecontent2::getAllHomeContent2();
-                ?>
-
-                <ul>
-                    <?php
-                    foreach ($homecontent2 as $bullet) {
-                        ?>
-                        <li><a href="<?php echo $bullet->link ?>"><?php echo $bullet->bullet ?></a></li>
-                    <?php
-                    }
-                    ?>
-                </ul>
-
             </div>
-            <a href="<?php echo $homecontents[1]->link ?>" id="homecontent2more" class="homecontentmore">اطلاعات
-                بیشتر</a>
-
-
         </div>
 
 
-        <?php
-        $homecontent3 = homecontent3::getAllHomeContent3();
-        ?>
 
-        <div id="homecontent3" class="homecontent">
-
-            <p id="homecontent3title" class="homecontenttitle"><?php echo $homecontents[2]->title ?></p>
-
-            <?php
-            foreach ($homecontent3 as $news) {
-                ?>
-                <div class="homecontent3">
-                    <p class="homecontent3title"><?php echo $news->subtitle ?></p>
-
-                    <p class="homecontent3text"><?php echo $news->subcontent ?></p>
-                </div>
-            <?php
-            }
-            ?>
-
-            <a href="<?php echo $homecontents[2]->link ?>" id="homecontent3more" class="homecontentmore">اطلاعات
-                بیشتر</a>
-
-
-        </div>
-
-        <?php
-        $homecontent4 = homecontent4::getAllHomeContent4();
-        ?>
-
-        <div id="homecontent4" class="homecontent">
-
-            <p id="homecontent4title" class="homecontenttitle"><?php echo $homecontents[3]->title ?></p>
-
-            <div id="homecontent4txet">
-                <?php echo $homecontent4[0]->content ?>
-            </div>
-
-            <a href="<?php echo $homecontents[3]->link ?>" id="homecontent4more" class="homecontentmore">اطلاعات
-                بیشتر</a>
-
-        </div>
     </div>
 </div>
 <p class="footer" id="footername">تمام حققوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>

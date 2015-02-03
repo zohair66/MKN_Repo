@@ -149,72 +149,67 @@ body {
     transition-duration: 2s;
 }
 
-.homecontent {
+/*-----------------------------------------*/
+.contactuscontent {
     float: right;
-    width: 302px;
-    margin: 5px;
+    width: 407px;
     height: 390px;
-    border: 1px solid black;
-    position: relative;
-    overflow: hidden;
-}
-
-/*#homecontent1*/
-/*{*/
-/*position:relative;*/
-/*}*/
-.homecontenttitle {
-    font-style: oblique;
-    font-weight: 600;
-}
-
-.homecontent1 {
-    float: right;
-    width: 100px;
     margin: 5px;
-    height: 340px;
+    border: 1px solid #000000;
+}
+
+.contentheaders {
+    height: 30px;
+    font-size: 20px;
+}
+
+.contenttext {
+    height: 320px;
+    width: 397px;
+    margin: 5px;
+    border: 1px solid #000000;
+}
+
+/*-----------------------------------------*/
+
+form {
+
+    padding: 10px;
     border: 1px solid black;
-}
+    border-radius: 10px;
+    float: right;
 
-.homecontentmore {
-    clear: both;
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    text-decoration: none;
-}
-
-#homecontent2table {
-    margin-right: 20px;
-}
-
-.homecontent3 {
-    width: 270px;
-    margin-right: 10px;
-    padding: 5px;
-    margin-top: 10px;
 
 }
 
-.homecontent3title {
-    font-weight: 500;
-    color: white;
+textarea {
+    width: 200px;
+    height: 100px;
+    resize: none;
 }
 
-.homecontent3text {
-    color: yellowgreen;
-    text-align: justify;
-    margin-top: 5px;
-}
-
-#homecontent4txet {
-    width: 270px;
-    margin-right: 10px;
-    padding: 5px;
-    margin-top: 10px;
+input[type=text], input[type=password] {
     border: 1px solid black;
+    border-radius: 4px;
 }
 
+td[colspan="2"] {
+    text-align: center;
+}
+
+:required {
+    background-color: lightcyan;
+}
+
+input[type=email]:valid {
+    background-color: lightgreen;
+}
+
+input[type=email]:invalid {
+    background-color: lightyellow;
+}
+
+/*-----------------------------------------*/
 .footer {
     text-align: center;
     clear: both;
