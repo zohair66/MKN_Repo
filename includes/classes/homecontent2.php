@@ -23,4 +23,20 @@ class homecontent2 extends Table{
         self::disconnect($conn);
         return $ret;
     }
+
+    public static function UpdateHomecontent2($postArray){
+        $ret = true;
+        $conn = self::connect();
+        $piclink = $postArray['piclink'];
+        $content = $postArray['content'];
+        $query = "UPDATE homecontent1 SET content = '$content' , picturelink = '$piclink' ";
+        $result = $conn->query($query);
+        if ($result === false) {
+            echo("Query failed: " . $conn->error . "<br />\n$query");
+            $ret = false;
+        }
+        self::disconnect($conn);
+        return $ret;
+    }
+
 }
