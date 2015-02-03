@@ -21,6 +21,8 @@ require_once("includes/includes.php");
         var pattern2 = /services\.php/;
         var pattern3 = /ourproducts\.php/;
         var pattern4 = /home\.php/;
+        var pattern5 = /contactus\.php/;
+        var pattern6 = /news\.php/;
 
         if (pattern1.test(linksite)) {
             firstpage = 1;
@@ -32,6 +34,12 @@ require_once("includes/includes.php");
             firstpage = 0;
         }
         else if (pattern4.test(linksite)) {
+            firstpage = 0;
+        }
+        else if (pattern5.test(linksite)) {
+            firstpage = 0;
+        }
+        else if (pattern6.test(linksite)) {
             firstpage = 0;
         }
         <?php
@@ -60,10 +68,12 @@ require_once("includes/includes.php");
                                                                 class="submenu"></a>
 
         <p class="text">نمونه کارها</p></div>
-    <div id="blog" class="menu" onmouseenter="select5()"><a href="#" id="subblog" class="submenu"></a>
+    <div id="blog" class="menu" onmouseenter="select5()"><a href="news.php" id="subblog" class="submenu"></a>
 
         <p class="text">آخرین اخبار</p></div>
-<div id="mail" class="menu" onmouseenter="select6()"><a href="#" id="submail" class="submenu"></a><p class="text">ارتباط با ما</p></div>
+    <div id="mail" class="menu" onmouseenter="select6()"><a href="contactus.php" id="submail" class="submenu"></a>
+
+        <p class="text">ارتباط با ما</p></div>
 </div>
 <div id="beforepagemain">
 <div id="homebefor" class="menu"></div>
