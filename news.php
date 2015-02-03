@@ -108,7 +108,8 @@ require_once("includes/includes.php");
                     ?>
                     <div class="pictureandtext">
                         <div class="picture"><img src="<?php echo "$product->piclink" ?>"/></div>
-                        <div class="newstext"></div>
+                        <div class="newstext">
+                            <?php echo "$product->text" ?></div>
                     </div>
                 <?php
                 }
