@@ -15,7 +15,10 @@ body
 {
     direction:rtl;
     background-color:rgb(252,252,252);
-    background:url("../img/128-167.jpg") fixed;
+    background:url("../img/A 26-21.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family:myfont;
 }
 
@@ -75,63 +78,63 @@ height:420px;
 }
 #subhome
 {
-background-image:url("../img/splash_icon1_over.png");
+background-image:url("../img/Home.png");
 transition-duration:0.4s;
 }
 #subaboutus
 {
-background-image:url("../img/splash_icon2.png");
+background-image:url("../img/About us.png");
 transition-duration:0.4s;
 }
 #subservice
 {
-background-image:url("../img/splash_icon3.png");
+background-image:url("../img/Our services.png");
 transition-duration:0.4s;
 }
 #subproducts
 {
-background-image:url("../img/splash_icon4.png");
+background-image:url("../img/Samples.png");
 transition-duration:0.4s;
 }
 #subblog
 {
-background-image:url("../img/splash_icon5.png");
+background-image:url("../img/Recent news.png");
 transition-duration:0.4s;
 }
 #submail
 {
-background-image:url("../img/splash_icon6.png");
+background-image:url("../img/Contact us.png");
 transition-duration:0.4s;
 }
 /*------------------------------------*/
 #subhome:hover
 {
-background-image:url("../img/splash_icon1_over.png");
+background-image:url("../img/Home_over.png");
 transition-duration:0.4s;
 }
 #subaboutus:hover
 {
-background-image:url("../img/splash_icon2_over.png");
+background-image:url("../img/About us_over.png");
 transition-duration:0.4s;
 }
 #subservice:hover
 {
-background-image:url("../img/splash_icon3_over.png");
+background-image:url("../img/Our services_over.png");
 transition-duration:0.4s;
 }
 #subproducts:hover
 {
-background-image:url("../img/splash_icon4_over.png");
+background-image:url("../img/Samples_over.png");
 transition-duration:0.4s;
 }
 #subblog:hover
 {
-background-image:url("../img/splash_icon5_over.png");
+background-image:url("../img/Recent news_over.png");
 transition-duration:0.4s;
 }
 #submail:hover
 {
-background-image:url("../img/splash_icon6_over.png");
+background-image:url("../img/Contact us_over.png");
 transition-duration:0.4s;
 }
 .submenu:hover
