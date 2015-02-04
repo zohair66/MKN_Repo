@@ -78,7 +78,7 @@ height:420px;
 }
 #subhome
 {
-background-image:url("../img/Home.png");
+    background-image: url("../img/Home_over.png");
 transition-duration:0.4s;
 }
 #subaboutus

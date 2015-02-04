@@ -81,7 +81,7 @@ transition-duration:0.4s;
 }
 #subaboutus
 {
-background-image:url("../img/About us.png");
+    background-image: url("../img/About us_over.png");
 transition-duration:0.4s;
 }
 #subservice
