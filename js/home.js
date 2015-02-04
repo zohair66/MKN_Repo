@@ -1,38 +1,45 @@
 ﻿function bodycontentload() {
 
-    
-    submenu = document.getElementsByClassName("submenu");
-    menu = document.getElementsByClassName("menu");
-    main = document.getElementById("main");
-    flag = 0;
-    for (i = 6; i < menu.length; i++) {
-        menurect = menu[i].getBoundingClientRect();
-        submenu[i - 6].style.top = (menurect.top + 40) + 'px';
-        submenu[i - 6].style.left = (menurect.left + 40) + 'px';
-        submenu[i - 6].style.transitionDuration = "1s";
-    }
-    main.style.visibility = "visible";
-    k = 0;
-
-    var myVar = setInterval(function () {
-        movemenu()
-    }, 100);
-
-    function movemenu() {
-        menurect = menu[k].getBoundingClientRect();
-        submenu[k].style.top = (menurect.top + 40) + 'px';
-        submenu[k].style.left = (menurect.left + 40) + 'px';
-        k = k + 1;
-        if (k == 6) {
-            clearInterval(myVar);
+    if (firstpage == 1) {
+        submenu = document.getElementsByClassName("submenu");
+        menu = document.getElementsByClassName("menu");
+        main = document.getElementById("main");
+        flag = 0;
+        for (i = 6; i < menu.length; i++) {
+            menurect = menu[i].getBoundingClientRect();
+            submenu[i - 6].style.top = (menurect.top + 40) + 'px';
+            submenu[i - 6].style.left = (menurect.left + 40) + 'px';
+            submenu[i - 6].style.transitionDuration = "1s";
         }
+        main.style.visibility = "visible";
+        k = 0;
+
+        var myVar = setInterval(function () {
+            movemenu()
+        }, 100);
+
+        function movemenu() {
+            menurect = menu[k].getBoundingClientRect();
+            submenu[k].style.top = (menurect.top + 40) + 'px';
+            submenu[k].style.left = (menurect.left + 40) + 'px';
+            k = k + 1;
+            if (k == 6) {
+                clearInterval(myVar);
+            }
+        }
+
+        text = document.getElementsByClassName("text");
+        beforepagemain = document.getElementById("beforepagemain");
+        beforepagemain.style.display = "none";
+        setTimeout(initializefunction, 1800);
+
+
+        content = document.getElementById("content");
+        content.style.transform = "translate(0px,0px)";
+        content.style.transform = "-webkit-translate(0px,0px)";
+        content.style.transitionDuration = "2s";
     }
 
-    text = document.getElementsByClassName("text");
-    beforepagemain = document.getElementById("beforepagemain");
-    setTimeout(initializefunction, 1800);
-
-    beforepagemain.style.display = "none";
     function initializefunction() {
         for (i = 0; i < menu.length; i++) {
 
@@ -40,16 +47,11 @@
             submenu[i].style.transitionDuration = "0s";
             submenu[i].style.transform = "translate(-40px,40px)";
             text[i].style.opacity = "1";
-
             flag = 1;
-
         }
+
     }
 
-    content = document.getElementById("content");
-    content.style.transform = "translate(0px,0px)";
-    content.style.transform = "-webkit-translate(0px,0px)";
-    content.style.transitionDuration = "2s";
 
     if(firstpage == 0){
 
@@ -70,7 +72,7 @@
             submenu[i].style.transform = "translate(-40px,40px)";
             text[i].style.opacity = "1";
             beforepagemain.style.display = "none";
-            flag = 1;
+
         }
 
     }
