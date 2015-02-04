@@ -55,7 +55,7 @@ require_once("includes/includes.php");
 
 <div id="logocontainer">
     <a href="makan1.php">
-        <img src="img/logo.png" alt="logo" title="دفتر طراحی و  پیاده سازی سایت  های اینترنتی ماکان"/>
+        <img src="img/Makan logo.png" alt="logo" title="دفتر طراحی و  پیاده سازی سایت  های اینترنتی ماکان"/>
     </a>
 </div>
 <div id="wrapper">
