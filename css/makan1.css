@@ -132,13 +132,17 @@ opacity:0;
 }
 .footer
 {
-    padding-top:10px;
+    padding-top: 10px;
 text-align:center;
-background:rgba(200,200,200,0.6) ;
+    background: rgba(200, 200, 200, 0.7);
 }
 
 #footername
 {
     margin-top:20px;
     font-weight:700;
+}
+
+#footertelefon {
+    margin-bottom: 50px;
 }
