@@ -3,13 +3,15 @@ require_once('table.php');
 class news extends Table{
     protected $data = array(
         "id" =>0,
+        "subtitle"=>"",
+        "subcontent"=>"",
         "piclink"=>"",
         "content"=>""
     );
 
     public static function getAllNews(){
         $conn = self::connect();
-        $query = "SELECT * FROM news";
+        $query = "SELECT * FROM homecontent3";
         $result = $conn -> query($query);
         if($result === false){
             echo("Query failed: ".$conn->error."<br />\n$query");
