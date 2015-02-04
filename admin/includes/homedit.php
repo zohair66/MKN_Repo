@@ -19,10 +19,25 @@ if(isset($_POST['piclink'])){
     $posthome2['bullet6'] = $_POST['bullet6'];
     if (homecontent2::UpdateHomecontent2($posthome2))
         Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
+}elseif(isset($_POST['subnews1'])){
+    $posthome3['subtitle1'] = $_POST['subnews1'];
+    $posthome3['subcontent1'] = $_POST['subcontnews1'];
+    $posthome3['subtitle2'] = $_POST['subnews2'];
+    $posthome3['subcontent2'] = $_POST['subcontnews2'];
+    $posthome3['subtitle3'] = $_POST['subnews3'];
+    $posthome3['subcontent3'] = $_POST['subcontnews3'];
+    $posthome3['subtitle4'] = $_POST['subnews4'];
+    $posthome3['subcontent4'] = $_POST['subcontnews4'];
+    if (homecontent3::UpdateHomecontent3($posthome3))
+        Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
+}elseif(isset($_POST['teamcontent'])){
+    $posthome4 = $_POST['teamcontent'];
+    if (homecontent4::UpdateHomecontent4($posthome4))
+        Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
 }
 $homecontent1 = homecontent1::getAllHomeContent1();
 $homecontents2 = homecontent2::getAllHomeContent2();
-$homecontent3 = homecontent3::getAllHomeContent3();
+$homecontents3 = homecontent3::getAllHomeContent3();
 $homecontent4 = homecontent4::getAllHomeContent4();
 ?>
 <div class="centerpanel">
@@ -91,6 +106,67 @@ $homecontent4 = homecontent4::getAllHomeContent4();
             </td>
         </tr>
     </form>
+
+    </br></br>
+
+    <div class="centerpanelheader">ویرایش خانه (ستون سوم)</div>
+    <form method="post">
+        <?php
+        foreach($homecontents3 as $homecontent3){
+            ?>
+            <table>
+                <tr>آیتم شماره  <?php echo $homecontent3->id ?></tr>
+                <tr>
+                    <td width="100">
+                        عنوان :
+                    </td>
+                    <td>
+                        <input size="100" type="text" name="subnews<?php echo $homecontent3->id ?>" value="<?php echo $homecontent3->subtitle ?>" />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100">
+                        خلاصه خبر :
+                    </td>
+                    <td>
+                        <input size="100" type="text" name="subcontnews<?php echo $homecontent3->id ?>" value="<?php echo $homecontent3->subcontent ?>" />
+                    </td>
+                </tr>
+            </table>
+        <?php
+        }
+        ?>
+        </br>
+        <tr>
+            <td colspan="4">
+                <input  type="submit" value="ذخیره" />
+            </td>
+        </tr>
+    </form>
+
+    </br></br>
+
+    <div class="centerpanelheader">ویرایش خانه (ستون چهارم)</div>
+    <form method="post">
+            <table>
+                <tr>تغییر متن تیم فنی ما</tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="teamcontent" id="area2"><?php echo $homecontent4[0]->content ?></textarea>
+                    </td>
+                </tr>
+            </table>
+        </br>
+        <tr>
+            <td colspan="4">
+                <input  type="submit" value="ذخیره" />
+            </td>
+        </tr>
+    </form>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('area2', {language: 'fa'});
+    </script>
 
     </br></br>
 

@@ -22,4 +22,18 @@ class homecontent4 extends Table{
         self::disconnect($conn);
         return $ret;
     }
+
+    public static function UpdateHomecontent4($posthome4){
+        $ret = true;
+        $conn = self::connect();
+        $query = "UPDATE homecontent4 SET content = '$posthome4' WHERE id = 1";
+        $result = $conn->query($query);
+        if ($result === false) {
+            echo("Query failed: " . $conn->error . "<br />\n$query");
+            $ret = false;
+        }
+        self::disconnect($conn);
+        return $ret;
+    }
+
 }
