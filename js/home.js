@@ -1,5 +1,5 @@
 ﻿function bodycontentload() {
-
+    document.body.scroll="No";
     if (firstpage == 1) {
         submenu = document.getElementsByClassName("submenu");
         menu = document.getElementsByClassName("menu");
