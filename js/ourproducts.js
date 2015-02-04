@@ -78,40 +78,52 @@
     }
 }
 function select1() {
-    main = menu[0];
-    container = submenu[0];
-    continerrect = container.getBoundingClientRect(); // get div coordinate
-    main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    if (flag == 1) {
+        main = menu[0];
+        container = submenu[0];
+        continerrect = container.getBoundingClientRect(); // get div coordinate
+        main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    }
 }
 function select2() {
-    main = menu[1];
-    container = submenu[1];
-    continerrect = container.getBoundingClientRect(); // get div coordinate
-    main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    if (flag == 1) {
+        main = menu[1];
+        container = submenu[1];
+        continerrect = container.getBoundingClientRect(); // get div coordinate
+        main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    }
 }
 function select3() {
-    main = menu[2];
-    container = submenu[2];
-    continerrect = container.getBoundingClientRect(); // get div coordinate
-    main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    if (flag == 1) {
+        main = menu[2];
+        container = submenu[2];
+        continerrect = container.getBoundingClientRect(); // get div coordinate
+        main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    }
 }
 function select4() {
-    main = menu[3];
-    container = submenu[3];
-    continerrect = container.getBoundingClientRect(); // get div coordinate
-    main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    if (flag == 1) {
+        main = menu[3];
+        container = submenu[3];
+        continerrect = container.getBoundingClientRect(); // get div coordinate
+        main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    }
 }
 function select5() {
-    main = menu[4];
-    container = submenu[4];
-    continerrect = container.getBoundingClientRect(); // get div coordinate
-    main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    if (flag == 1) {
+        main = menu[4];
+        container = submenu[4];
+        continerrect = container.getBoundingClientRect(); // get div coordinate
+        main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    }
 }
 function select6() {
-    main = menu[5];
-    container = submenu[5];
-    continerrect = container.getBoundingClientRect(); // get div coordinate
-    main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    if (flag == 1) {
+        main = menu[5];
+        container = submenu[5];
+        continerrect = container.getBoundingClientRect(); // get div coordinate
+        main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
+    }
 }
 
 function movefunction() {
