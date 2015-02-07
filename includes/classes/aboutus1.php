@@ -28,4 +28,20 @@ class aboutus1 extends Table{
         self::disconnect($conn);
         return $ret;
     }
+
+    public static function UpdateAboutus1($about1array){
+        $ret = true;
+        $conn = self::connect();
+        $title = $about1array['title'];
+        $piclink = $about1array['picturelink'];
+        $textcontent = $about1array['textcontent'];
+        $query = "UPDATE aboutus1 SET title = '$title' , picturelink = '$piclink' , textcontent ='$textcontent' ";
+        $result = $conn->query($query);
+        if ($result === false) {
+            echo("Query failed: " . $conn->error . "<br />\n$query");
+            $ret = false;
+        }
+        self::disconnect($conn);
+        return $ret;
+    }
 }

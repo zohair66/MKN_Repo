@@ -59,7 +59,7 @@ $fullname = $_SESSION['fname'] . " " . $_SESSION['lname'];
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "HomeEdit") {
                 include('homedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "AboutusEdit"){
-//                BB
+                include('aboutusedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "ServicesEdit"){
 //                CC
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "KhadamatEdit"){
