@@ -61,7 +61,7 @@ $fullname = $_SESSION['fname'] . " " . $_SESSION['lname'];
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "AboutusEdit"){
                 include('aboutusedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "ServicesEdit"){
-//                CC
+                include('servicedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "KhadamatEdit"){
 //                DD
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "5PageEdit"){
