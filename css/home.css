@@ -35,19 +35,19 @@ margin-right:auto;
 margin-left:auto;
 margin-right:auto;
 width:1260px;
+position:relative;
 }
 
 #menuthispage
 {
-position:relative;
+
 }
 
 #main
 {
     width:1260px;
     height:210px;
-    visibility: hidden;
-    
+    visibility:hidden;
 }
 #beforepagemain
 {
@@ -64,7 +64,7 @@ height:420px;
     height:120px;
     background-position: center;
     background-repeat:no-repeat;
-    position:fixed;
+    position:absolute;
    
 }
 .menu
@@ -229,12 +229,16 @@ color:white;
 
 .footer
 {
-text-align:center;
-clear:both;
+    padding-top: 10px;
+    text-align:center;
+    background: rgba(200, 200, 200, 0.7);
 }
 
 #footername
 {
     margin-top:20px;
     font-weight:700;
+}
+#footertelefon {
+    margin-bottom: 10px;
 }

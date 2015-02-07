@@ -186,12 +186,16 @@ transform:translate(1500px,0px);
 /*----------------------------------------*/
 .footer
 {
-text-align:center;
-clear:both;
+    padding-top: 10px;
+    text-align:center;
+    background: rgba(200, 200, 200, 0.7);
 }
 
 #footername
 {
     margin-top:20px;
     font-weight:700;
+}
+#footertelefon {
+    margin-bottom: 10px;
 }
