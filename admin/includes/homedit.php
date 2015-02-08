@@ -110,6 +110,7 @@ $homecontent4 = homecontent4::getAllHomeContent4();
     </br></br>
 
     <div class="centerpanelheader">ویرایش خانه (ستون سوم)</div>
+    <p style="font-weight: 600;color: brown;margin-bottom: 5px">برای تغییر خلاصه خبرها با استفاده از ادیتور پیشرفته به صفحه اخبار مراجعه شود</p>
     <form method="post">
         <?php
         foreach($homecontents3 as $homecontent3){

@@ -35,7 +35,7 @@ $fullname = $_SESSION['fname'] . " " . $_SESSION['lname'];
                     <a href="?action=KhadamatEdit">صفحه محصولات ما</a>
                 </li>
                 <li>
-                    <a href="?action=ContactUsEdit">صفحه پنجم</a>
+                    <a href="?action=NewsEdit">صفحه آخرین اخبار</a>
                 </li>
                 <li>
                     <a href="?action=ContactUsEdit">صفحه ارتباط با ما</a>
@@ -63,15 +63,15 @@ $fullname = $_SESSION['fname'] . " " . $_SESSION['lname'];
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "ServicesEdit"){
                 include('servicedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "KhadamatEdit"){
-//                DD
-            }elseif (isset( $_GET["action"]) and $_GET["action"] == "5PageEdit"){
-//                EE
+                include('productedit.php');
+            }elseif (isset( $_GET["action"]) and $_GET["action"] == "NewsEdit"){
+                include('newsedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "ContactUsEdit"){
-//                FF
+                include('contactusedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "UsersEdit"){
-//                GG
+                include('usersedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "NewUser"){
-//                HH
+                include('newuser.php');
             } elseif (isset( $_GET["action"]) and $_GET["action"] == "forms") {
                 include('showforms.php');
             }else{
