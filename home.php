@@ -79,15 +79,16 @@ require_once("includes/includes.php");
 
         <p class="text">ارتباط با ما</p></div>
 </div>
-<div id="beforepagemain">
-<div id="homebefor" class="menu"></div>
-<div id="aboutusbefor" class="menu"></div>
-<div id="servicebefor" class="menu"></div>
-<div id="productsbefor" class="menu"></div>
-<div id="blogbefor" class="menu"></div>
-<div id="mailbefor" class="menu"></div>
+
 </div>
-</div>
+    <div id="beforepagemain">
+        <div id="homebefor" class="menu"></div>
+        <div id="aboutusbefor" class="menu"></div>
+        <div id="servicebefor" class="menu"></div>
+        <div id="productsbefor" class="menu"></div>
+        <div id="blogbefor" class="menu"></div>
+        <div id="mailbefor" class="menu"></div>
+    </div>
     <?php
         $homecontents = homecontents::getAllHomeContents();
         $homecontent1 = homecontent1::getAllHomeContent1();

@@ -1,14 +1,17 @@
 ﻿function bodycontentload() {
-    document.body.scroll="No";
+
     if (firstpage == 1) {
         submenu = document.getElementsByClassName("submenu");
         menu = document.getElementsByClassName("menu");
         main = document.getElementById("main");
+        mainrect=main.getBoundingClientRect();
         flag = 0;
         for (i = 6; i < menu.length; i++) {
             menurect = menu[i].getBoundingClientRect();
-            submenu[i - 6].style.top = (menurect.top + 40) + 'px';
-            submenu[i - 6].style.left = (menurect.left + 40) + 'px';
+            menurecttop=menurect.top-(mainrect.top+5);
+            menurectleft=menurect.left-(mainrect.left+5);
+            submenu[i - 6].style.top = (menurecttop + 40) + 'px';
+            submenu[i - 6].style.left = (menurectleft + 40) + 'px';
             submenu[i - 6].style.transitionDuration = "1s";
         }
         main.style.visibility = "visible";
@@ -20,8 +23,10 @@
 
         function movemenu() {
             menurect = menu[k].getBoundingClientRect();
-            submenu[k].style.top = (menurect.top + 40) + 'px';
-            submenu[k].style.left = (menurect.left + 40) + 'px';
+            menurecttop=menurect.top-(mainrect.top);
+            menurectleft=menurect.left-(mainrect.left);
+            submenu[k].style.top = (menurecttop + 40) + 'px';
+            submenu[k].style.left = (menurectleft + 40) + 'px';
             k = k + 1;
             if (k == 6) {
                 clearInterval(myVar);
@@ -72,7 +77,6 @@
             submenu[i].style.transform = "translate(-40px,40px)";
             text[i].style.opacity = "1";
             beforepagemain.style.display = "none";
-
         }
 
     }
