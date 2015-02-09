@@ -5,6 +5,8 @@
         menu = document.getElementsByClassName("menu");
         main = document.getElementById("main");
         mainrect=main.getBoundingClientRect();
+        menurect = menu[0].getBoundingClientRect();
+        menurecttop_c=menurect.top-(mainrect.top);
         flag = 0;
         for (i = 6; i < menu.length; i++) {
             menurect = menu[i].getBoundingClientRect();
@@ -23,9 +25,8 @@
 
         function movemenu() {
             menurect = menu[k].getBoundingClientRect();
-            menurecttop=menurect.top-(mainrect.top);
             menurectleft=menurect.left-(mainrect.left);
-            submenu[k].style.top = (menurecttop + 40) + 'px';
+            submenu[k].style.top = (menurecttop_c + 40) + 'px';
             submenu[k].style.left = (menurectleft + 40) + 'px';
             k = k + 1;
             if (k == 6) {

@@ -1,6 +1,11 @@
 ﻿function bodycontentload() {
     submenu = document.getElementsByClassName("submenu");
     menu = document.getElementsByClassName("menu");
+    main=document.getElementById('main');
+    menurect1=menu[0].getBoundingClientRect();
+    menurect2=menu[3].getBoundingClientRect();
+    mainrect=main.getBoundingClientRect();
+  //  menurecttop_c=mainrecrt.top-menurect.top;
     flag=0;
     for (i = 0; i < menu.length; i++) {
        // menu[i].removeEventListener("mouseenter");
@@ -9,14 +14,21 @@
         submenu[i].style.transitionDuration = "1s";
     }
 
-  
     k = 0;
 
     var myVar = setInterval(function () { movemenu() }, 100);
     function movemenu() {
         menurect = menu[k].getBoundingClientRect();
-        submenu[k].style.top = (menurect.top + 40) + 'px';
-        submenu[k].style.left = (menurect.left + 40) + 'px';
+        if(k>=3){
+            submenu[k].style.top = (menurect2.top-mainrect.top + 40) + 'px';
+
+        }
+        else{
+            submenu[k].style.top = (menurect1.top-mainrect.top + 40) + 'px';
+        }
+
+
+        submenu[k].style.left = (menurect.left-mainrect.left + 40) + 'px';
         submenu[k].style.transform = "scale(1,1)";
         k = k + 1;
         if (k == 6) { clearInterval(myVar); }
