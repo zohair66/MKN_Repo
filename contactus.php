@@ -198,7 +198,7 @@ require_once("includes/includes.php");
 
     </div>
 </div>
-<p class="footer" id="footername">تمام حققوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>
+<p class="footer" id="footername">تمام حقوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>
 
 <p class="footer" id="footeraddress"><br/>آدرس:اصفهان خیابان میرداماد بعد از چهارراه زاهد طبقه فوقانی دفتر اسناد رسمی
     410 </p>
