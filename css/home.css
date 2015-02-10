@@ -208,10 +208,12 @@ position:absolute;
 left:5px;
 bottom:5px;
 text-decoration: none;
+color: #dff1ff;
 }
 #homecontent2table
 {
     margin-right: 20px;
+    text-decoration: none;
 }
 .homecontent3
 {
