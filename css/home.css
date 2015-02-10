@@ -148,7 +148,7 @@ opacity:0;
 {
 width:1260px;
 height:400px;
-background-color:rgba(20,20,20,0.5);
+background-color:rgba(20,20,20,0.7);
 transform:translate(1500px,0px);
 -webkit-transform:translate(1500px,0px);
  transition-duration:2s ;
@@ -163,15 +163,20 @@ border:1px solid black;
 position:relative;
 overflow:hidden;
 }
-
-/*#homecontent1*/
-/*{*/
-/*position:relative;*/
-/*}*/
+#homecontent1{
+    width: 502px;
+}
+#homecontent2{
+    width: 202px;
+}
+#homecontent3{
+    width: 202px;
+}
 .homecontenttitle
 {
 font-style:oblique;
 font-weight:600;
+margin:10px ;
 }
 .homecontent1
 {
@@ -179,8 +184,22 @@ float:right;
 width:100px;
 margin:5px;
 height:340px;
-border:1px solid black; 
+
 }
+#homecontent1text{
+    width:250px;
+    height: 300px;
+    text-align: justify;
+}
+#homecontent1picture{
+    width:220px;
+    height:248px ;
+    margin-top: 10px;
+    border:3px solid beige;
+    border-radius: 5px;
+
+}
+
 
 .homecontentmore
 {
