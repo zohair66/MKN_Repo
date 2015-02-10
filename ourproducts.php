@@ -8,7 +8,7 @@ require_once("includes/includes.php");
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 <title>ماکان</title>
 <link href="css/ourproducts.css" rel="stylesheet" />
-<script src="js/ourproducts.js"></script>
+<script src="js/home.js"></script>
     <?php
     if (isset($_SERVER['HTTP_REFERER'])){
     $get_referer = $_SERVER['HTTP_REFERER'];
@@ -73,17 +73,17 @@ require_once("includes/includes.php");
 
         <p class="text">ارتباط با ما</p></div>
 </div>
-<div id="beforepagemain">
-<div id="homebefor" class="menu"></div>
-<div id="aboutusbefor" class="menu"></div>
-<div id="servicebefor" class="menu"></div>
-<div id="productsbefor" class="menu"></div>
-<div id="blogbefor" class="menu"></div>
-<div id="mailbefor" class="menu"></div>
-</div>
+
 </div>
 
-
+    <div id="beforepagemain">
+        <div id="homebefor" class="menu"></div>
+        <div id="aboutusbefor" class="menu"></div>
+        <div id="servicebefor" class="menu"></div>
+        <div id="productsbefor" class="menu"></div>
+        <div id="blogbefor" class="menu"></div>
+        <div id="mailbefor" class="menu"></div>
+    </div>
 <div id="content">
 
     <div id="ourprodutstitle">

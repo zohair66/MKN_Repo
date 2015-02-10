@@ -33,12 +33,9 @@ margin-right:auto;
 margin-left:auto;
 margin-right:auto;
 width:1260px;
+position: relative;
 }
 
-#menuthispage
-{
-position:relative;
-}
 
 #main
 {
@@ -62,7 +59,7 @@ height:420px;
     height:120px;
     background-position: center;
     background-repeat:no-repeat;
-    position:fixed;
+    position:absolute;
    
 }
 .menu

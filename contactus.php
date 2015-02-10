@@ -9,7 +9,7 @@ require_once("includes/includes.php");
     <title>ماکان</title>
     <script src="js/jquery-1.10.2.js"></script>
     <link href="css/contactus.css" rel="stylesheet"/>
-    <script src="js/contactus.js"></script>
+    <script src="js/home.js"></script>
     <?php
     if (isset($_SERVER['HTTP_REFERER'])){
     $get_referer = $_SERVER['HTTP_REFERER'];
@@ -83,14 +83,16 @@ require_once("includes/includes.php");
 
                 <p class="text">ارتباط با ما</p></div>
         </div>
-        <div id="beforepagemain">
-            <div id="homebefor" class="menu"></div>
-            <div id="aboutusbefor" class="menu"></div>
-            <div id="servicebefor" class="menu"></div>
-            <div id="productsbefor" class="menu"></div>
-            <div id="blogbefor" class="menu"></div>
-            <div id="mailbefor" class="menu"></div>
-        </div>
+
+    </div>
+
+    <div id="beforepagemain">
+        <div id="homebefor" class="menu"></div>
+        <div id="aboutusbefor" class="menu"></div>
+        <div id="servicebefor" class="menu"></div>
+        <div id="productsbefor" class="menu"></div>
+        <div id="blogbefor" class="menu"></div>
+        <div id="mailbefor" class="menu"></div>
     </div>
     <?php
     $homecontents = homecontents::getAllHomeContents();
