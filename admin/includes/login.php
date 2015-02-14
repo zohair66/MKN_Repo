@@ -28,7 +28,7 @@
     </form>
 </div>
 <div id="adminloginfooter">
-    طراحی شده در دفتر طراحی پرتال های اینترنتی ماکان فناور
+    نرم افزار مدیریت محتوای ماکان نسخه 1.0
 </div>
 <div id="master">
     <div id="mainrotate">
