@@ -35,6 +35,7 @@ margin-right:auto;
 margin-left:auto;
 margin-right:auto;
 width:1260px;
+height: 610px;
 position:relative;
 }
 
@@ -150,7 +151,9 @@ width:1260px;
 height:400px;
 background-color:rgba(20,20,20,0.7);
 transform:translate(1500px,0px);
- transition-duration:2s ;
+transition-duration:2s ;
+position:absolute ;
+border-radius:10px ;
 }
 .homecontent
 {
@@ -240,6 +243,35 @@ color:white;
     padding: 5px;
     margin-top:10px;
     border:1px solid black;
+}
+/*-----------------------*/
+.homemore
+{
+    width:1260px;
+    height:400px;
+    background-color:rgba(20,20,20,0.7);
+    position: absolute;
+    transform:translate(1500px,0px) ;
+    transition-duration: 2s;
+    border-radius:10px;
+}
+.homemoretitle
+{
+    font-style:oblique;
+    font-weight:600;
+    margin:10px ;
+}
+.homemoretext{
+    font-size:20px;
+    margin:10px ;
+    text-align: justify;
+    color: #dff1ff;
+    overflow: auto;
+}
+/*-----------------------*/
+#footerdiv{
+
+
 }
 
 .footer
