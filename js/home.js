@@ -52,6 +52,7 @@
             submenu[i].style.position = 'initial';
             submenu[i].style.transitionDuration = "0s";
             submenu[i].style.transform = "translate(-40px,40px)";
+            submenu[i].style.transform = "-ms-translate(-40px,40px)";
             text[i].style.opacity = "1";
             flag = 1;
         }
@@ -76,10 +77,11 @@
             submenu[i].style.position = 'initial';
             submenu[i].style.transitionDuration = "0s";
             submenu[i].style.transform = "translate(-40px,40px)";
+            submenu[i].style.msTransform = "translate(-40px,40px)";
             text[i].style.opacity = "1";
             beforepagemain.style.display = "none";
         }
-
+    flag=1;
     }
 }
 function select1() {

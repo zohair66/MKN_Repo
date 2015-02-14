@@ -58,19 +58,19 @@ require_once("includes/includes.php");
 <div id="wrapper">
 <div id="menuthispage">
 <div id="main">
-<div id="home" class="menu" onmouseenter="select1()"><a href="home.php" id="subhome" class="submenu"></a><p class="text">خانه</p></div>
-    <div id="aboutus" class="menu" onmouseenter="select2()"><a href="aboutus.php" id="subaboutus" class="submenu"></a>
+<div id="home" class="menu" onmouseenter="select1()" onmouseleave="out1()"><a href="home.php" id="subhome" class="submenu"></a><p class="text">خانه</p></div>
+    <div id="aboutus" class="menu" onmouseenter="select2()" onmouseleave="out2()"><a href="aboutus.php" id="subaboutus" class="submenu"></a>
 
         <p class="text">درباره ما</p></div>
-<div id="service" class="menu" onmouseenter="select3()"><a href="#" id="subservice"  class="submenu"></a><p class="text">خدمات ما</p></div>
-    <div id="products" class="menu" onmouseenter="select4()"><a href="ourproducts.php" id="subproducts"
+<div id="service" class="menu" onmouseenter="select3()" onmouseleave="out3()"><a href="#" id="subservice"  class="submenu"></a><p class="text">خدمات ما</p></div>
+    <div id="products" class="menu" onmouseenter="select4()" onmouseleave="out4()"><a href="ourproducts.php" id="subproducts"
                                                                 class="submenu"></a>
 
         <p class="text">نمونه کارها</p></div>
-    <div id="blog" class="menu" onmouseenter="select5()"><a href="news.php" id="subblog" class="submenu"></a>
+    <div id="blog" class="menu" onmouseenter="select5()" onmouseleave="out5()"><a href="news.php" id="subblog" class="submenu"></a>
 
         <p class="text">آخرین اخبار</p></div>
-    <div id="mail" class="menu" onmouseenter="select6()"><a href="contactus.php" id="submail" class="submenu"></a>
+    <div id="mail" class="menu" onmouseenter="select6()" onmouseleave="out6()"onmouseleave="out1()"><a href="contactus.php" id="submail" class="submenu"></a>
 
         <p class="text">ارتباط با ما</p></div>
 </div>
@@ -105,29 +105,6 @@ require_once("includes/includes.php");
     ?>
 
 
-<!--<div id="servicescontent1" class="servicescontent">-->
-<!--    <img  src="img/page3_pic1.png" class="servisespicture"/>-->
-<!--    <a href="#" class="sservicesreadmore" >اطلاعات بیشتر</a>-->
-<!--    <p class="servicestext">daftar tarahi website makan</p>-->
-<!---->
-<!--</div>-->
-<!--<div id="servicescontent2" class="servicescontent">-->
-<!--    <img  src="img/page3_pic2.png" class="servisespicture"/>-->
-<!--    <a href="#" class="sservicesreadmore">اطلاعات بیشتر</a>-->
-<!--    <p class="servicestext">daftar tarahi website makan</p>-->
-<!--</div>-->
-<!---->
-<!---->
-<!--<div id="servicescontent3" class="servicescontent">-->
-<!--    <img  src="img/page3_pic3.png" class="servisespicture"/>-->
-<!--    <a href="#" class="sservicesreadmore">اطلاعات بیشتر</a>-->
-<!--    <p class="servicestext">daftar tarahi website makan</p>-->
-<!--</div>-->
-<!--<div id="servicescontent4" class="servicescontent">-->
-<!--    <img  src="img/page3_pic4.png" class="servisespicture"/>-->
-<!--    <a href="#" class="sservicesreadmore">اطلاعات بیشتر</a>-->
-<!--    <p class="servicestext">daftar tarahi website makan</p>-->
-<!--</div>-->
 
 </div>
 </div>
