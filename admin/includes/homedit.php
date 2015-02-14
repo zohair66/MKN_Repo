@@ -2,6 +2,7 @@
 if(isset($_POST['piclink'])){
     $postArray['piclink'] = $_POST['piclink'];
     $postArray['content'] = $_POST['content'];
+    $postArray['maincontent'] = $_POST['maincontent'];
     if (homecontent1::UpdateHomecontent1($postArray))
         Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
 }elseif(isset($_POST['link1'])){
@@ -53,11 +54,22 @@ $homecontent4 = homecontent4::getAllHomeContent4();
                 </td>
             </tr>
             <tr>
+                <td width="100">
+                    متن خلاصه :
+                </td>
                 <td colspan="2">
                     <textarea name="content" id="area"><?php echo $homecontent1[0]->content ?></textarea>
                 </td>
             </tr>
             </br>
+            <tr>
+                <td width="100">
+                    متن اصلی :
+                </td>
+                <td colspan="2">
+                    <textarea name="maincontent" id="area12"><?php echo $homecontent1[0]->maincontent ?></textarea>
+                </td>
+            </tr>
             <tr>
                 <td colspan="4">
                     <input  type="submit" value="ذخیره" />
@@ -68,6 +80,7 @@ $homecontent4 = homecontent4::getAllHomeContent4();
     <script src="ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('area', {language: 'fa'});
+        CKEDITOR.replace('area12', {language: 'fa'});
     </script>
 
     </br></br>

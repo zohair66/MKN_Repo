@@ -4,7 +4,8 @@ class homecontent1 extends Table{
     protected $data = array(
         "id"=> 0,
         "content"=>"",
-        "picturelink"=>""
+        "picturelink"=>"",
+        "maincontent"=>""
     );
 
     public static function getAllHomeContent1() {
@@ -29,7 +30,9 @@ class homecontent1 extends Table{
         $conn = self::connect();
         $piclink = $postArray['piclink'];
         $content = $postArray['content'];
-        $query = "UPDATE homecontent1 SET content = '$content' , picturelink = '$piclink' ";
+        $maincontent = $postArray['maincontent'];
+        $query = "UPDATE homecontent1 SET content = '$content' , picturelink = '$piclink' ,
+            maincontent = '$maincontent' ";
         $result = $conn->query($query);
         if ($result === false) {
             echo("Query failed: " . $conn->error . "<br />\n$query");
