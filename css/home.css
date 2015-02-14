@@ -150,7 +150,6 @@ width:1260px;
 height:400px;
 background-color:rgba(20,20,20,0.7);
 transform:translate(1500px,0px);
--webkit-transform:translate(1500px,0px);
  transition-duration:2s ;
 }
 .homecontent

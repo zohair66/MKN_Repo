@@ -30,6 +30,7 @@
 
         submenu[k].style.left = (menurect.left-mainrect.left + 40) + 'px';
         submenu[k].style.transform = "scale(1,1)";
+        submenu[k].style.msTransform = "scale(1,1)";
         k = k + 1;
         if (k == 6) { clearInterval(myVar); }
     }
@@ -40,7 +41,6 @@
 
     function initializefunction() {
         for (i = 0; i < menu.length; i++) {
-          
             submenu[i].style.position = 'initial';
             submenu[i].style.transitionDuration = "0s";
             submenu[i].style.transform = "translate(-40px,40px)";

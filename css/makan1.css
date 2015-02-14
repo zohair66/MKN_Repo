@@ -47,6 +47,7 @@ margin-right:auto;
     background-position: center;
     background-repeat:no-repeat;
     transform:scale(0.1,0.1);
+    -ms-transform:scale(0.1,0.1);
     position:absolute;
    
 }
@@ -139,8 +140,8 @@ background: rgba(200, 200, 200, 0.7);
 
 #footername
 {
-    margin-top:20px;
-    font-weight:700;
+margin-top:20px;
+font-weight:700;
 }
 
 #footertelefon {

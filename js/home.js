@@ -130,19 +130,60 @@ function select6() {
         main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
     }
 }
-
+function out1() {
+    if (flag == 1) {
+        main = menu[0];
+        container = submenu[0];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out2() {
+    if (flag == 1) {
+        main = menu[1];
+        container = submenu[1];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out3() {
+    if (flag == 1) {
+        main = menu[2];
+        container = submenu[2];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out4() {
+    if (flag == 1) {
+        main = menu[3];
+        container = submenu[3];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out5() {
+    if (flag == 1) {
+        main = menu[4];
+        container = submenu[4];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out6() {
+    if (flag == 1) {
+        main = menu[5];
+        container = submenu[5];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
 function movefunction() {
     firstabsorb = 80;
     inout = 0;
     i = 0;
     //--------------------------------
-    main.onmouseout = function (event) {
-        container.style.transitionDuration = "0.3s";
-        container.style.transform = "translate(-40px,40px)";
-        firstabsorb = 80; //first distance for absorbtion
-        i = 0;
-        inout = 0;
-    }
+ //   main.onmouseout = function (event) {
+ //       container.style.transitionDuration = "0.3s";
+ //       container.style.transform = "translate(-40px,40px)";
+ //       firstabsorb = 80; //first distance for absorbtion
+ //       i = 0;
+ //       inout = 0;
+  //  }
     //------------------------------------
     main.onmousemove = function (event) {
         mousepositionx = event.pageX - continerrect.left - 60;//100px is (div width/2)
@@ -180,6 +221,14 @@ function movefunction() {
 
         }
     }
+}
+
+ function outfunction(){
+           container.style.transitionDuration = "0.3s";
+           container.style.transform = "translate(-40px,40px)";
+           firstabsorb = 80; //first distance for absorbtion
+           i = 0;
+           inout = 0;
 }
 
 
