@@ -3,7 +3,8 @@ require_once("table.php");
 class homecontent4 extends Table{
     protected $data = array(
         "id"=> 0,
-        "content"=>""
+        "content"=>"",
+        "morecontent"=>""
     );
 
     public static function getAllHomeContent4() {
@@ -26,7 +27,10 @@ class homecontent4 extends Table{
     public static function UpdateHomecontent4($posthome4){
         $ret = true;
         $conn = self::connect();
-        $query = "UPDATE homecontent4 SET content = '$posthome4' WHERE id = 1";
+        $content = $posthome4['content'];
+        $morecontent = $posthome4['morecontent'];
+        $query = "UPDATE homecontent4 SET content = '$content' , morecontent = '$morecontent'
+          WHERE id = 1";
         $result = $conn->query($query);
         if ($result === false) {
             echo("Query failed: " . $conn->error . "<br />\n$query");

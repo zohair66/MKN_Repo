@@ -32,7 +32,8 @@ if(isset($_POST['piclink'])){
     if (homecontent3::UpdateHomecontent3($posthome3))
         Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
 }elseif(isset($_POST['teamcontent'])){
-    $posthome4 = $_POST['teamcontent'];
+    $posthome4['content'] = $_POST['teamcontent'];
+    $posthome4['morecontent'] = $_POST['morecontent'];
     if (homecontent4::UpdateHomecontent4($posthome4))
         Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
 }
@@ -163,10 +164,20 @@ $homecontent4 = homecontent4::getAllHomeContent4();
     <div class="centerpanelheader">ویرایش خانه (ستون چهارم)</div>
     <form method="post">
             <table>
-                <tr>تغییر متن تیم فنی ما</tr>
                 <tr>
                     <td colspan="2">
+                        تغییر متن تیم فنی ما
+                    </td>
+                    <td colspan="2">
                         <textarea name="teamcontent" id="area2"><?php echo $homecontent4[0]->content ?></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        تغییر متن تیم فنی ما
+                    </td>
+                    <td colspan="2">
+                        <textarea name="morecontent" id="area3"><?php echo $homecontent4[0]->morecontent ?></textarea>
                     </td>
                 </tr>
             </table>
@@ -180,6 +191,7 @@ $homecontent4 = homecontent4::getAllHomeContent4();
     <script src="ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('area2', {language: 'fa'});
+        CKEDITOR.replace('area3', {language: 'fa'});
     </script>
 
     </br></br>
