@@ -232,114 +232,146 @@ require_once("includes/includes.php");
 
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
     homemore1=document.getElementById("homemore1");
+        homemore1.style.visibility = "visible";
     homemore1.style.transform = "translate(0px,0px)";
         event.preventDefault();
 }
     function moreinfo1back(event) {
     content = document.getElementById("content");
+        content.style.visibility = "visible";
     content.style.transform = "translate(0px,0px)";
     homemore1 = document.getElementById("homemore1");
     homemore1.style.transform = "translate(1500px,0px)";
+        homemore1.style.visibility = "hidden";
         event.preventDefault();
 }
 
     function moreinfo2_1(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
     homemore2_1 = document.getElementById("homemore2_1");
+        homemore2_1.style.visibility = "visible";
     homemore2_1.style.transform = "translate(0px,0px)";
         event.preventDefault();
 }
     function moreinfo2_1back(event) {
     content = document.getElementById("content");
+        content.style.visibility = "visible";
     content.style.transform = "translate(0px,0px)";
     homemore2_1 = document.getElementById("homemore2_1");
     homemore2_1.style.transform = "translate(1500px,0px)";
+        homemore2_1.style.visibility = "hidden";
         event.preventDefault();
 }
     function moreinfo2_2(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
     homemore2_2 = document.getElementById("homemore2_2");
+        homemore2_2.style.visibility = "visible";
     homemore2_2.style.transform = "translate(0px,0px)";
         event.preventDefault();
 }
     function moreinfo2_2back(event) {
     content = document.getElementById("content");
+        content.style.visibility = "visible";
     content.style.transform = "translate(0px,0px)";
     homemore2_2 = document.getElementById("homemore2_2");
     homemore2_2.style.transform = "translate(1500px,0px)";
+        homemore2_2.style.visibility = "hidden";
         event.preventDefault(event);
 }
     function moreinfo2_3(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
     homemore2_3 = document.getElementById("homemore2_3");
+        homemore2_3.style.visibility = "visible";
     homemore2_3.style.transform = "translate(0px,0px)";
         event.preventDefault();
 }
     function moreinfo2_3back(event) {
     content = document.getElementById("content");
+        content.style.visibility = "visible";
     content.style.transform = "translate(0px,0px)";
     homemore2_3 = document.getElementById("homemore2_3");
     homemore2_3.style.transform = "translate(1500px,0px)";
+        homemore2_3.style.visibility = "hidden";
         event.preventDefault();
 }
     function moreinfo2_4(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
     homemore2_4 = document.getElementById("homemore2_4");
+        homemore2_4.style.visibility = "visible";
     homemore2_4.style.transform = "translate(0px,0px)";
         event.preventDefault();
 }
     function moreinfo2_4back(event) {
     content = document.getElementById("content");
+        content.style.visibility = "visible";
     content.style.transform = "translate(0px,0px)";
     homemore2_4 = document.getElementById("homemore2_4");
     homemore2_4.style.transform = "translate(1500px,0px)";
+        homemore2_4.style.visibility = "hidden";
         event.preventDefault();
 }
     function moreinfo2_5(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
     homemore2_5 = document.getElementById("homemore2_5");
+        homemore2_5.style.visibility = "visible";
     homemore2_5.style.transform = "translate(0px,0px)";
         event.preventDefault();
 }
     function moreinfo2_5back(event) {
     content = document.getElementById("content");
+        content.style.visibility = "visible";
     content.style.transform = "translate(0px,0px)";
     homemore2_5 = document.getElementById("homemore2_5");
     homemore2_5.style.transform = "translate(1500px,0px)";
+        homemore2_5.style.visibility = "hidden";
         event.preventDefault();
 }
     function moreinfo2_6(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
     homemore2_6 = document.getElementById("homemore2_6");
+        homemore2_6.style.visibility = "visible";
     homemore2_6.style.transform = "translate(0px,0px)";
         event.preventDefault();
 }
     function moreinfo2_6back(event) {
     content = document.getElementById("content");
+        content.style.visibility = "visible";
     content.style.transform = "translate(0px,0px)";
     homemore2_6 = document.getElementById("homemore2_6");
     homemore2_6.style.transform = "translate(1500px,0px)";
+        homemore2_6.style.visibility = "hidden";
         event.preventDefault();
 }
     function moreinfo4(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
     homemore4 = document.getElementById("homemore4");
+        homemore4.style.visibility = "visible";
     homemore4.style.transform = "translate(0px,0px)";
         event.preventDefault();
 }
     function moreinfo4back(event) {
     content = document.getElementById("content");
+        content.style.visibility = "visible";
     content.style.transform = "translate(0px,0px)";
     homemore4 = document.getElementById("homemore4");
     homemore4.style.transform = "translate(1500px,0px)";
+        homemore4.style.visibility = "hidden";
         event.preventDefault();
 }
 </script>

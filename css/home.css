@@ -258,6 +258,7 @@ color:white;
     transform:translate(1500px,0px) ;
     transition-duration: 2s;
     border-radius:10px;
+    visibility: hidden;
 }
 .homemoretitle
 {
