@@ -164,7 +164,7 @@ require_once("includes/includes.php");
         <?php echo $homecontent4[0]->content ?>
     </div>
 
-    <a href="<?php echo $homecontents[3]->link ?>" id="homecontent4more" class="homecontentmore" onclick="moreinfo4()">اطلاعات بیشتر</a>
+    <a href="#" id="homecontent4more" class="homecontentmore" onclick="moreinfo4()">اطلاعات بیشتر</a>
 
 </div>
 </div>
@@ -196,9 +196,13 @@ require_once("includes/includes.php");
 
         <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_5back()">بازگشت</a></div>
 
-    <div id="homemore2_6" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[5]->bullet ?>5</p>
+    <div id="homemore2_6" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[5]->bullet ?></p>
 
         <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_6back()">بازگشت</a></div>
+
+    <div id="homemore4" class="homemore"><p class="homemoretitle"><?php echo $homecontents[3]->title ?></p>
+
+        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo4back()">بازگشت</a></div>
 
 </div>
 
@@ -294,6 +298,18 @@ function moreinfo2_6back() {
     content.style.transform = "translate(0px,0px)";
     homemore2_6 = document.getElementById("homemore2_6");
     homemore2_6.style.transform = "translate(1500px,0px)";
+}
+function moreinfo4() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(1500px,0px)";
+    homemore4 = document.getElementById("homemore4");
+    homemore4.style.transform = "translate(0px,0px)";
+}
+function moreinfo4back() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(0px,0px)";
+    homemore4 = document.getElementById("homemore4");
+    homemore4.style.transform = "translate(1500px,0px)";
 }
 </script>
 </body>
