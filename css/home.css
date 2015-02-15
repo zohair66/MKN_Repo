@@ -208,13 +208,22 @@ position:absolute;
 left:5px;
 bottom:5px;
 text-decoration: none;
-color: #dff1ff;
+    color: chartreuse;
 }
 #homecontent2table
 {
     margin-right: 20px;
+}
+
+#homecontent2table ul li {
+    list-style-type: none;
+}
+
+#homecontent2table ul li a {
+    color: #50D4FD;
     text-decoration: none;
 }
+
 .homecontent3
 {
     width:270px;
