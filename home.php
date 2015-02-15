@@ -100,7 +100,7 @@ require_once("includes/includes.php");
     <img src="<?php echo $homecontent1[0]->picturelink  ?>">
 </div>
 <div id="homecontent1text" class="homecontent1"><?php echo $homecontent1[0]->content ?></div>
-<a href="#" id="homecontent1more" class="homecontentmore" onclick="moreinfo1()">اطلاعات بیشتر</a>
+    <a href="#" id="homecontent1more" class="homecontentmore" onclick="moreinfo1(event)">اطلاعات بیشتر</a>
 
 </div>
 <div id="homecontent2" class="homecontent">
@@ -115,7 +115,8 @@ require_once("includes/includes.php");
         <ul>
             <?php
             foreach($homecontent2 as $bullet){?>
-                <li><a href="#" onclick="moreinfo2_<?php echo $bullet->id ?>()"><?php echo $bullet->bullet ?></a></li>
+                <li><a href="#" onclick="moreinfo2_<?php echo $bullet->id ?>(event)"><?php echo $bullet->bullet ?></a>
+                </li>
             <?php
             }
             ?>
@@ -164,7 +165,7 @@ require_once("includes/includes.php");
         <?php echo $homecontent4[0]->content ?>
     </div>
 
-    <a href="#" id="homecontent4more" class="homecontentmore" onclick="moreinfo4()">اطلاعات بیشتر</a>
+    <a href="#" id="homecontent4more" class="homecontentmore" onclick="moreinfo4(event)">اطلاعات بیشتر</a>
 
 </div>
 </div>
@@ -178,31 +179,43 @@ require_once("includes/includes.php");
 
     <div id="homemore2_1" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[0]->bullet ?></p>
 
-        <p class="homemoretext"><?php echo $homecontent2[0]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_1back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[0]->content ?></p><a href="#" class="homemoreback"
+                                                                              onclick="moreinfo2_1back(event)">بازگشت</a>
+    </div>
 
     <div id="homemore2_2" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[1]->bullet ?></p>
 
-        <p class="homemoretext"><?php echo $homecontent2[1]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_2back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[1]->content ?></p><a href="#" class="homemoreback"
+                                                                              onclick="moreinfo2_2back(event)">بازگشت</a>
+    </div>
 
     <div id="homemore2_3" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[2]->bullet ?></p>
 
-        <p class="homemoretext"><?php echo $homecontent2[2]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_3back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[2]->content ?></p><a href="#" class="homemoreback"
+                                                                              onclick="moreinfo2_3back(event)">بازگشت</a>
+    </div>
 
     <div id="homemore2_4" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[3]->bullet ?></p>
 
-        <p class="homemoretext"><?php echo $homecontent2[3]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_4back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[3]->content ?></p><a href="#" class="homemoreback"
+                                                                              onclick="moreinfo2_4back(event)">بازگشت</a>
+    </div>
 
     <div id="homemore2_5" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[4]->bullet ?></p>
 
-        <p class="homemoretext"><?php echo $homecontent2[4]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_5back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[4]->content ?></p><a href="#" class="homemoreback"
+                                                                              onclick="moreinfo2_5back(event)">بازگشت</a>
+    </div>
 
     <div id="homemore2_6" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[5]->bullet ?></p>
 
-        <p class="homemoretext"><?php echo $homecontent2[5]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_6back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[5]->content ?></p><a href="#" class="homemoreback"
+                                                                              onclick="moreinfo2_6back(event)">بازگشت</a>
+    </div>
 
     <div id="homemore4" class="homemore"><p class="homemoretitle"><?php echo $homecontents[3]->title ?></p>
 
-        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo4back()">بازگشت</a></div>
+        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo4back(event)">بازگشت</a></div>
 
 </div>
 
@@ -214,102 +227,119 @@ require_once("includes/includes.php");
 
 
 <script>
-function moreinfo1(){
+    function moreinfo1(event) {
+
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
     homemore1=document.getElementById("homemore1");
     homemore1.style.transform = "translate(0px,0px)";
+        event.preventDefault();
 }
-function moreinfo1back() {
+    function moreinfo1back(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(0px,0px)";
     homemore1 = document.getElementById("homemore1");
     homemore1.style.transform = "translate(1500px,0px)";
+        event.preventDefault();
 }
 
-function moreinfo2_1() {
+    function moreinfo2_1(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
     homemore2_1 = document.getElementById("homemore2_1");
     homemore2_1.style.transform = "translate(0px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_1back() {
+    function moreinfo2_1back(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(0px,0px)";
     homemore2_1 = document.getElementById("homemore2_1");
     homemore2_1.style.transform = "translate(1500px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_2() {
+    function moreinfo2_2(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
     homemore2_2 = document.getElementById("homemore2_2");
     homemore2_2.style.transform = "translate(0px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_2back() {
+    function moreinfo2_2back(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(0px,0px)";
     homemore2_2 = document.getElementById("homemore2_2");
     homemore2_2.style.transform = "translate(1500px,0px)";
+        event.preventDefault(event);
 }
-function moreinfo2_3() {
+    function moreinfo2_3(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
     homemore2_3 = document.getElementById("homemore2_3");
     homemore2_3.style.transform = "translate(0px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_3back() {
+    function moreinfo2_3back(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(0px,0px)";
     homemore2_3 = document.getElementById("homemore2_3");
     homemore2_3.style.transform = "translate(1500px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_4() {
+    function moreinfo2_4(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
     homemore2_4 = document.getElementById("homemore2_4");
     homemore2_4.style.transform = "translate(0px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_4back() {
+    function moreinfo2_4back(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(0px,0px)";
     homemore2_4 = document.getElementById("homemore2_4");
     homemore2_4.style.transform = "translate(1500px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_5() {
+    function moreinfo2_5(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
     homemore2_5 = document.getElementById("homemore2_5");
     homemore2_5.style.transform = "translate(0px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_5back() {
+    function moreinfo2_5back(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(0px,0px)";
     homemore2_5 = document.getElementById("homemore2_5");
     homemore2_5.style.transform = "translate(1500px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_6() {
+    function moreinfo2_6(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
     homemore2_6 = document.getElementById("homemore2_6");
     homemore2_6.style.transform = "translate(0px,0px)";
+        event.preventDefault();
 }
-function moreinfo2_6back() {
+    function moreinfo2_6back(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(0px,0px)";
     homemore2_6 = document.getElementById("homemore2_6");
     homemore2_6.style.transform = "translate(1500px,0px)";
+        event.preventDefault();
 }
-function moreinfo4() {
+    function moreinfo4(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(1500px,0px)";
     homemore4 = document.getElementById("homemore4");
     homemore4.style.transform = "translate(0px,0px)";
+        event.preventDefault();
 }
-function moreinfo4back() {
+    function moreinfo4back(event) {
     content = document.getElementById("content");
     content.style.transform = "translate(0px,0px)";
     homemore4 = document.getElementById("homemore4");
     homemore4.style.transform = "translate(1500px,0px)";
+        event.preventDefault();
 }
 </script>
 </body>
