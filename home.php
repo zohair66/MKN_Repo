@@ -161,7 +161,8 @@ require_once("includes/includes.php");
 <div id="homecontent4" class="homecontent">
 
     <p id="homecontent4title" class="homecontenttitle"><?php echo $homecontents[3]->title ?></p>
-    <div id="homecontent4txet">
+
+    <div id="homecontent4text">
         <?php echo $homecontent4[0]->content ?>
     </div>
 

@@ -163,7 +163,6 @@ margin:5px;
 height:390px;
 border:1px solid black;
 position:relative;
-overflow:hidden;
 }
 #homecontent1{
     width: 502px;
@@ -236,13 +235,18 @@ color:white;
     text-align:justify;
     margin-top:5px;
 }
-#homecontent4txet
+
+#homecontent4text
 {
     width:270px;
     margin-right:10px;
     padding: 5px;
+    height: 300px;
     margin-top:10px;
     border:1px solid black;
+    overflow: auto;
+
+
 }
 /*-----------------------*/
 .homemore
