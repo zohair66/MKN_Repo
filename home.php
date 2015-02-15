@@ -178,27 +178,27 @@ require_once("includes/includes.php");
 
     <div id="homemore2_1" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[0]->bullet ?></p>
 
-        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_1back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[0]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_1back()">بازگشت</a></div>
 
     <div id="homemore2_2" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[1]->bullet ?></p>
 
-        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_2back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[1]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_2back()">بازگشت</a></div>
 
     <div id="homemore2_3" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[2]->bullet ?></p>
 
-        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_3back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[2]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_3back()">بازگشت</a></div>
 
     <div id="homemore2_4" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[3]->bullet ?></p>
 
-        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_4back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[3]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_4back()">بازگشت</a></div>
 
     <div id="homemore2_5" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[4]->bullet ?></p>
 
-        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_5back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[4]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_5back()">بازگشت</a></div>
 
     <div id="homemore2_6" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[5]->bullet ?></p>
 
-        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_6back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent2[5]->content ?></p><a href="#" class="homemoreback" onclick="moreinfo2_6back()">بازگشت</a></div>
 
     <div id="homemore4" class="homemore"><p class="homemoretitle"><?php echo $homecontents[3]->title ?></p>
 

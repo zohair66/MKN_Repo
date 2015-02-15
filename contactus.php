@@ -1,5 +1,20 @@
 ﻿<?php
 require_once("includes/includes.php");
+if(isset($_POST['send'])){
+    $newform['name'] = $_POST['Name'];
+    $newform['phoneNum'] = $_POST['phonenum'];
+    $newform['email'] = $_POST['email'];
+    $newform['haghhogh'] = $_POST['haghhogh'];
+    if (isset($_POST['receivemail'])){
+        $newform['rmail']=true;
+    }
+    else{
+        $newform['rmail']=false;
+    }
+    $newform['desc'] = $_POST['description'];
+    if(Forms::insertForm($newform))
+        Users::DisplayWar("اطلاعات شما دریافت گردید، به زودی یکی از کارشناسان ماکان فناور با شما تماس خواهد گرفت");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -118,14 +133,14 @@ require_once("includes/includes.php");
             <div class="contentheaders">تماس با ما</div>
             <div class="contenttext">
                 <div id="form">
-                    <form action="makan1.html" method="get" enctype="text/plain" onsubmit="return validate();">
+                    <form method="post" enctype="text/plain" onsubmit="return validate();">
 
                         <table>
                             <tr>
                                 <td>نام و نام خانوادگی
                                 </td>
                                 <td>
-                                    <input type="text" name="text1" id="text1" oninvalid="Invalidname(this);"
+                                    <input type="text" name="Name" id="text1" oninvalid="Invalidname(this);"
                                            oninput="Invalidname(this);"
                                            placeholder="فارسی" required="required"/><span id="namespan"
                                                                                           style="color: red"></span>
@@ -136,7 +151,7 @@ require_once("includes/includes.php");
                                 <td>شماره تماس (موبایل)
                                 </td>
                                 <td>
-                                    <input type="text" name="text2" id="text2" oninvalid="Invalidtel(this);"
+                                    <input type="text" name="phonenum" id="text2" oninvalid="Invalidtel(this);"
                                            oninput="Invalidtel(this);"
                                            placeholder="09130000000" required="required"/><span id="telspan"
                                                                                                 style="color: red"></span>
@@ -158,7 +173,7 @@ require_once("includes/includes.php");
                                 <td>شخص حقیق یا حقوقی
                                 </td>
                                 <td>
-                                    <select name="s1">
+                                    <select name="haghhogh">
                                         <option value="1">حقیقی</option>
                                         <option value="2">حقوقی</option>
                                     </select>
@@ -169,7 +184,7 @@ require_once("includes/includes.php");
                                 <td>آیا مایل به دریافت ایمیل هستید؟
                                 </td>
                                 <td>
-                                    <input type="checkbox" name="checkbox" checked="checked"/>
+                                    <input type="checkbox" name="receivemail" checked="checked"/>
                                 </td>
                             </tr>
 
@@ -177,7 +192,7 @@ require_once("includes/includes.php");
                                 <td>خلاصه ای از سایت مورد نظر
                                 </td>
                                 <td>
-                                    <textarea name="textarea" maxlength="30"></textarea>
+                                    <textarea name="description" maxlength="30"></textarea>
                                 </td>
                             </tr>
                             <tr>

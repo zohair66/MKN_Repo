@@ -4,7 +4,8 @@ class homecontent2 extends Table{
     protected $data = array(
         "id"=> 0,
         "bullet"=>"",
-        "link"=>""
+        "link"=>"",
+        "content"=>""
     );
 
     public static function getAllHomeContent2() {
@@ -29,20 +30,27 @@ class homecontent2 extends Table{
         $conn = self::connect();
         $link1 = $posthome2['link1'];
         $bullet1 = $posthome2['bullet1'];
+        $content1 = $posthome2['content1'];
         $link2 = $posthome2['link2'];
         $bullet2 = $posthome2['bullet2'];
+        $content2 = $posthome2['content2'];
         $link3 = $posthome2['link3'];
         $bullet3 = $posthome2['bullet3'];
+        $content3 = $posthome2['content3'];
         $link4 = $posthome2['link4'];
         $bullet4 = $posthome2['bullet4'];
+        $content4 = $posthome2['content4'];
         $link5 = $posthome2['link5'];
         $bullet5 = $posthome2['bullet5'];
+        $content5 = $posthome2['content5'];
         $link6 = $posthome2['link6'];
         $bullet6 = $posthome2['bullet6'];
+        $content6 = $posthome2['content6'];
 
-        $query = "INSERT INTO homecontent2 (id,bullet,link)
-        VALUES (1,'$bullet1','$link1'),(2,'$bullet2','$link2'),(3,'$bullet3','$link3'),
-        (4,'$bullet4','$link4'),(5,'$bullet5','$link5'),(6,'$bullet6','$link6') ON DUPLICATE KEY UPDATE
+        $query = "INSERT INTO homecontent2 (id,bullet,link,content)
+        VALUES (1,'$bullet1','$link1','$content1'),(2,'$bullet2','$link2','$content2'),
+        (3,'$bullet3','$link3','$content3'),(4,'$bullet4','$link4',$content4),
+        (5,'$bullet5','$link5','$content5'),(6,'$bullet6','$link6','$content6') ON DUPLICATE KEY UPDATE
         bullet=VALUES(bullet),link=VALUES(link)";
 //      $query = "UPDATE homecontent1 SET content = '$content' , picturelink = '$piclink' ";
         $result = $conn->query($query);

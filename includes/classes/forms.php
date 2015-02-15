@@ -61,4 +61,24 @@ class Forms extends Table{
         self::disconnect($conn);
         return true;
     }
+
+    public static function insertForm($newform){
+        $ret = true;
+        $conn = self::connect();
+        $name = $newform['name'];
+        $phonenum = $newform['phoneNum'];
+        $email = $newform['email'];
+        $haghhogh = $newform['haghhogh'];
+        $rmail = $newform['rmail'];
+        $description = $newform['desc'];
+        $query = "INSERT INTO forms (`Name`,phoneNum,email,haghhogh,receivemail,description) VALUES
+            ('$name','$phonenum','$email','$haghhogh','$rmail','$description')";
+        $result = $conn->query($query);
+        if ($result === false) {
+            echo("Query failed: " . $conn->error . "<br />\n$query");
+            $ret = false;
+        }
+        self::disconnect($conn);
+        return $ret;
+    }
 }
