@@ -174,7 +174,7 @@ require_once("includes/includes.php");
     <div id="homemore1" class="homemore"><p class="homemoretitle"><?php echo $homecontents[0]->title ?></p>
 
         <p class="homemoretext"><?php echo $homecontent1[0]->maincontent ?></p><a href="#" class="homemoreback"
-                                                                                  onclick="moreinfo1back()">بازگشت</a>
+                                                                                  onclick="moreinfo1back(event)">بازگشت</a>
     </div>
 
     <div id="homemore2_1" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[0]->bullet ?></p>
