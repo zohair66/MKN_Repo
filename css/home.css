@@ -164,10 +164,10 @@ height:390px;
 position:relative;
 }
 #homecontent1{
-    width: 502px;
+    width: 492px;
 }
 #homecontent2{
-    width: 202px;
+    width: 212px;
 }
 #homecontent3{
     width: 202px;
@@ -187,7 +187,7 @@ height:340px;
 
 }
 #homecontent1text{
-    width:250px;
+    width: 240px;
     height: 300px;
     text-align: justify;
 }
@@ -212,16 +212,18 @@ text-decoration: none;
 }
 #homecontent2table
 {
-    margin-right: 20px;
+    
 }
 
 #homecontent2table ul li {
     list-style-type: none;
+    margin-bottom: 15px;
 }
 
 #homecontent2table ul li a {
     color: #50D4FD;
     text-decoration: none;
+
 }
 
 .homecontent3
