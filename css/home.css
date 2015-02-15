@@ -165,12 +165,14 @@ position:relative;
 }
 #homecontent1{
     width: 492px;
+    overflow: auto;
 }
 #homecontent2{
     width: 212px;
 }
 #homecontent3{
     width: 202px;
+    overflow: auto;
 }
 .homecontenttitle
 {
@@ -190,6 +192,7 @@ height:340px;
     width: 240px;
     height: 300px;
     text-align: justify;
+    overflow: auto;
 }
 #homecontent1picture{
     width:220px;
@@ -212,7 +215,7 @@ text-decoration: none;
 }
 #homecontent2table
 {
-    
+
 }
 
 #homecontent2table ul li {
