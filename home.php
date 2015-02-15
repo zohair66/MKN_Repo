@@ -168,26 +168,47 @@ require_once("includes/includes.php");
 
 </div>
 </div>
-    <div id="homemore1" class="homemore"><p class="homemoretitle">خوش آمدید</p><p
-            class="homemoretext"><?php echo $homecontent1[0]->maincontent ?>
-        </p><a href="#" class="homemoreback" onclick="moreinfo1back()">بازگشت</a></div>
 
 
-    <div id="homemore2_1" class="homemore"><p class="homemoretitle">خوش آمدید</p>
+    <div id="homemore1" class="homemore"><p class="homemoretitle"><?php echo $homecontents[0]->title ?></p>
 
-        <p class="homemoretext">امروزه دنیای مجازی در معرفی کالا و یا خدمات نقش بسزایی دارد. فناوری اطلاعات در زمینه¬های
-            بسیاری ازجمله اطلاع رسانی، آموزش، خدمات رسانی و فروش کاربرد دارد. استفاده از این قابلیت می¬تواند به ارتقای
-            بهره گیری از نیروهای متعهد و اولولیت دادن به کیفیت کارها، مهمترین دغدغه مجموعه ماکان است.
-        </p><a href="#" class="homemoreback" onclick="moreinfo2_1back()">بازگشت</a></div>
+        <p class="homemoretext"><?php echo $homecontent1[0]->maincontent ?></p><a href="#" class="homemoreback"
+                                                                                  onclick="moreinfo1back()">بازگشت</a>
+    </div>
 
+    <div id="homemore2_1" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[0]->bullet ?></p>
 
-    <div id="homemore4" class="homemore"></div>
+        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_1back()">بازگشت</a></div>
+
+    <div id="homemore2_2" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[1]->bullet ?></p>
+
+        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_2back()">بازگشت</a></div>
+
+    <div id="homemore2_3" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[2]->bullet ?></p>
+
+        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_3back()">بازگشت</a></div>
+
+    <div id="homemore2_4" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[3]->bullet ?></p>
+
+        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_4back()">بازگشت</a></div>
+
+    <div id="homemore2_5" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[4]->bullet ?></p>
+
+        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_5back()">بازگشت</a></div>
+
+    <div id="homemore2_6" class="homemore"><p class="homemoretitle"><?php echo $homecontent2[5]->bullet ?>5</p>
+
+        <p class="homemoretext"></p><a href="#" class="homemoreback" onclick="moreinfo2_6back()">بازگشت</a></div>
+
 </div>
+
 <div  id="footerdiv">
 <p  class="footer" id="footername">تمام حقوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>
 <p class="footer" id="footeraddress"><br />آدرس:اصفهان خیابان میرداماد بعد از چهارراه زاهد طبقه فوقانی دفتر اسناد رسمی 410 </p>
 <p class="footer" id="footertelefon">تلفن:32352016-031 تلفکس:32362237-031</p>
 </div>
+
+
 <script>
 function moreinfo1(){
     content = document.getElementById("content");
@@ -213,6 +234,66 @@ function moreinfo2_1back() {
     content.style.transform = "translate(0px,0px)";
     homemore2_1 = document.getElementById("homemore2_1");
     homemore2_1.style.transform = "translate(1500px,0px)";
+}
+function moreinfo2_2() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(1500px,0px)";
+    homemore2_2 = document.getElementById("homemore2_2");
+    homemore2_2.style.transform = "translate(0px,0px)";
+}
+function moreinfo2_2back() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(0px,0px)";
+    homemore2_2 = document.getElementById("homemore2_2");
+    homemore2_2.style.transform = "translate(1500px,0px)";
+}
+function moreinfo2_3() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(1500px,0px)";
+    homemore2_3 = document.getElementById("homemore2_3");
+    homemore2_3.style.transform = "translate(0px,0px)";
+}
+function moreinfo2_3back() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(0px,0px)";
+    homemore2_3 = document.getElementById("homemore2_3");
+    homemore2_3.style.transform = "translate(1500px,0px)";
+}
+function moreinfo2_4() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(1500px,0px)";
+    homemore2_4 = document.getElementById("homemore2_4");
+    homemore2_4.style.transform = "translate(0px,0px)";
+}
+function moreinfo2_4back() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(0px,0px)";
+    homemore2_4 = document.getElementById("homemore2_4");
+    homemore2_4.style.transform = "translate(1500px,0px)";
+}
+function moreinfo2_5() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(1500px,0px)";
+    homemore2_5 = document.getElementById("homemore2_5");
+    homemore2_5.style.transform = "translate(0px,0px)";
+}
+function moreinfo2_5back() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(0px,0px)";
+    homemore2_5 = document.getElementById("homemore2_5");
+    homemore2_5.style.transform = "translate(1500px,0px)";
+}
+function moreinfo2_6() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(1500px,0px)";
+    homemore2_6 = document.getElementById("homemore2_6");
+    homemore2_6.style.transform = "translate(0px,0px)";
+}
+function moreinfo2_6back() {
+    content = document.getElementById("content");
+    content.style.transform = "translate(0px,0px)";
+    homemore2_6 = document.getElementById("homemore2_6");
+    homemore2_6.style.transform = "translate(1500px,0px)";
 }
 </script>
 </body>
