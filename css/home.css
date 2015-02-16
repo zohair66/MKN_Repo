@@ -1,17 +1,28 @@
-﻿body::-webkit-scrollbar {
-    width: 1em;
-    direction: rtl;
+﻿::-webkit-scrollbar {
+    width: 8px;
 }
 
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+::-webkit-scrollbar-button {
+    width: 8px;
+    height: 5px;
 }
 
-body::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+::-webkit-scrollbar-track {
+    background: #eee;
+    border: thin solid lightgray;
+    box-shadow: 0px 0px 3px #dfdfdf inset;
+    border-radius: 10px;
 }
 
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border: thin solid gray;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7d7d7d;
+}
 
 *{
     padding:0px;
@@ -173,20 +184,22 @@ border-radius:10px ;
 .homecontent
 {
 float:right;
-width:302px;
 margin:5px;
 height:390px;
 position:relative;
 }
 #homecontent1{
     width: 500px;
+    border-left: 1px double #b2b2b2;
 }
 #homecontent2{
     width: 212px;
+    border-left: 1px double #b2b2b2;
 }
 #homecontent3{
     width: 202px;
     overflow: auto;
+    border-left: 1px double #b2b2b2;
 }
 .homecontenttitle
 {
@@ -217,9 +230,7 @@ height:340px;
     border:3px solid beige;
     border-radius: 5px;
     overflow: hidden;
-
 }
-
 
 .homecontentmore
 {
@@ -243,7 +254,13 @@ text-decoration: none;
 #homecontent2table ul li a {
     color: #50D4FD;
     text-decoration: none;
+}
 
+#homecontent2table ul li a:hover {
+    color: #000000;
+    transition-duration: 0.3s;
+    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.1, 1.1);
 }
 
 .homecontent3
@@ -267,14 +284,12 @@ color:white;
 
 #homecontent4text
 {
-    width:270px;
-    margin-right:10px;
-    padding: 5px;
+    width: 285px;
+    margin-right: 5px;
     height: 300px;
     margin-top:10px;
     direction: rtl;
     overflow: auto;
-
 
 }
 /*-----------------------*/
