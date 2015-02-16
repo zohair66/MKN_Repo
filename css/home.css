@@ -193,6 +193,7 @@ position:relative;
     border-left: 1px double #b2b2b2;
 }
 #homecontent2{
+    margin-right: 20px;
     width: 212px;
     border-left: 1px double #b2b2b2;
 }
@@ -284,7 +285,7 @@ color:white;
 
 #homecontent4text
 {
-    width: 285px;
+    width: 270px;
     margin-right: 5px;
     height: 300px;
     margin-top:10px;
