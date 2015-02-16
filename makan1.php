@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/Favicon.ico" type="image/x-icon">
 <title>ماکان</title>
 <link href="css/makan1.css" rel="stylesheet" />
 <script src="js/makan1.js"></script>
