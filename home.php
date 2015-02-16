@@ -123,7 +123,6 @@ require_once("includes/includes.php");
         </ul>
 
     </div>
-    <a href="<?php echo $homecontents[1]->link ?>" id="homecontent2more" class="homecontentmore">اطلاعات بیشتر</a>
 
 
 </div>

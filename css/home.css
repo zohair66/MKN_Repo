@@ -237,11 +237,20 @@ height:340px;
 {
 clear:both;
 position:absolute;
-left:5px;
-bottom:5px;
+    left: 10px;
+    bottom: 3px;
 text-decoration: none;
-    color: chartreuse;
+    color: #B7B7B7;
 }
+
+.homecontentmore:hover {
+    color: #048CAD;
+    transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+
+}
+
+
 #homecontent2table
 {
 
@@ -262,6 +271,7 @@ text-decoration: none;
     transition-duration: 0.3s;
     transform: scale(1.2, 1.2);
     -moz-transform: scale(1.2, 1.2);
+    margin-right: 20px;
 }
 
 .homecontent3
