@@ -48,10 +48,9 @@ class homecontent2 extends Table{
         $content6 = $posthome2['content6'];
 
         $query = "INSERT INTO homecontent2 (id,bullet,link,content)
-        VALUES (1,'$bullet1','$link1','$content1'),(2,'$bullet2','$link2','$content2'),
-        (3,'$bullet3','$link3','$content3'),(4,'$bullet4','$link4',$content4),
-        (5,'$bullet5','$link5','$content5'),(6,'$bullet6','$link6','$content6') ON DUPLICATE KEY UPDATE
-        bullet=VALUES(bullet),link=VALUES(link)";
+        VALUES (1,'$bullet1','$link1','$content1'),(2,'$bullet2','$link2','$content2'),(3,'$bullet3','$link3','$content3'),
+        (4,'$bullet4','$link4','$content4'),(5,'$bullet5','$link5','$content5'),(6,'$bullet6','$link6','$content6') ON DUPLICATE KEY UPDATE
+        bullet=VALUES(bullet),link=VALUES(link),content=VALUES(content)";
 //      $query = "UPDATE homecontent1 SET content = '$content' , picturelink = '$piclink' ";
         $result = $conn->query($query);
         if ($result === false) {

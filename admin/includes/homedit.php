@@ -8,16 +8,23 @@ if(isset($_POST['piclink'])){
 }elseif(isset($_POST['link1'])){
     $posthome2['link1'] = $_POST['link1'];
     $posthome2['bullet1'] = $_POST['bullet1'];
+    $posthome2['content1'] = $_POST['bulletcontent1'];
     $posthome2['link2'] = $_POST['link2'];
     $posthome2['bullet2'] = $_POST['bullet2'];
+    $posthome2['content2'] = $_POST['bulletcontent2'];
     $posthome2['link3'] = $_POST['link3'];
     $posthome2['bullet3'] = $_POST['bullet3'];
+    $posthome2['content3'] = $_POST['bulletcontent3'];
     $posthome2['link4'] = $_POST['link4'];
     $posthome2['bullet4'] = $_POST['bullet4'];
+    $posthome2['content4'] = $_POST['bulletcontent4'];
     $posthome2['link5'] = $_POST['link5'];
     $posthome2['bullet5'] = $_POST['bullet5'];
+    $posthome2['content5'] = $_POST['bulletcontent5'];
     $posthome2['link6'] = $_POST['link6'];
     $posthome2['bullet6'] = $_POST['bullet6'];
+    $posthome2['content6'] = $_POST['bulletcontent6'];
+
     if (homecontent2::UpdateHomecontent2($posthome2))
         Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
 }elseif(isset($_POST['subnews1'])){
@@ -109,7 +116,19 @@ $homecontent4 = homecontent4::getAllHomeContent4();
                     <input size="100" type="text" name="bullet<?php echo $homecontent2->id ?>" value="<?php echo $homecontent2->bullet ?>" />
                 </td>
             </tr>
+                    <tr>
+                        <td width="100">
+                            متن توضیحات :
+                        </td>
+                        <td colspan="2">
+                            <textarea name="bulletcontent<?php echo $homecontent2->id ?>" id="areahome2_<?php echo $homecontent2->id ?>"><?php echo $homecontent2->content ?></textarea>
+                        </td>
+                    </tr>
             </table>
+            <script src="ckeditor/ckeditor.js"></script>
+            <script>
+                 CKEDITOR.replace('areahome2_<?php echo $homecontent2->id ?>', {language: 'fa'});
+            </script>
             <?php
                 }
             ?>
