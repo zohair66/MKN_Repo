@@ -256,11 +256,11 @@ text-decoration: none;
     text-decoration: none;
 }
 
-#homecontent2table ul li a:hover {
+#homecontent2table ul li:hover {
     color: #000000;
     transition-duration: 0.3s;
     transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.2, 1.2);
 }
 
 .homecontent3
