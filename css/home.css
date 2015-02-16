@@ -1,4 +1,32 @@
-﻿*{
+﻿body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+body::-ms-scrollbar {
+    width: 1em;
+}
+
+body::-ms-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-ms-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+
+
+*{
     padding:0px;
     margin:0px;
     border:0px;
@@ -164,8 +192,7 @@ height:390px;
 position:relative;
 }
 #homecontent1{
-    width: 492px;
-    overflow: auto;
+    width: 500px;
 }
 #homecontent2{
     width: 212px;
@@ -189,17 +216,20 @@ height:340px;
 
 }
 #homecontent1text{
-    width: 240px;
+    width: 250px;
     height: 300px;
     text-align: justify;
     overflow: auto;
+    direction: ltr;
+    padding: 5px;
 }
 #homecontent1picture{
-    width:220px;
+    width: 210px;
     height:248px ;
     margin-top: 10px;
     border:3px solid beige;
     border-radius: 5px;
+    overflow: hidden;
 
 }
 
@@ -233,7 +263,7 @@ text-decoration: none;
 {
     margin-right:10px;
     padding: 5px;
-margin-top:10px;
+    margin-top: 10px;
 
 }
 .homecontent3title
@@ -255,7 +285,7 @@ color:white;
     padding: 5px;
     height: 300px;
     margin-top:10px;
-    border:1px solid black;
+    direction: ltr;
     overflow: auto;
 
 
