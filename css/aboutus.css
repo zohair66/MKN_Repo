@@ -235,11 +235,12 @@ float: right;
 }
 #aboutuscontent1text{
     margin:5px;
-    width:340px;
-    overflow: auto;
+    width:330px;
+    height:300px ;
+    overflow:auto;
     text-align: justify;
+    padding: 5px;
 }
-
 
 .aboutusconten2
 {
@@ -250,14 +251,13 @@ margin:3px;
 border:3px solid beige;
 overflow: hidden;
 }
-.aboutusconten2 img:hover
+.aboutusconten2:hover
 {
 cursor:hand;
 }
 
 #aboutuscontent2{
-
-    overflow: auto;
+overflow: auto;
 }
 
 
