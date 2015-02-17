@@ -226,7 +226,7 @@ margin:10px ;
 }
 .aboutuscontent1
 {
-border:1px solid  #000000 ;
+
 float: right;
 }
 #aboutuscontent1pictrue{
@@ -244,13 +244,19 @@ float: right;
 .aboutusconten2
 {
 float:right;
-width:290px;
+width:280px;
 height:160px;
-border:1px solid black;
-margin:5px;
+margin:3px;
+border:3px solid beige;
+overflow: hidden;
 }
+.aboutusconten2 img:hover
+{
+cursor:hand;
+}
+
 #aboutuscontent2{
-    border: 1px solid #000000;
+
     overflow: auto;
 }
 
