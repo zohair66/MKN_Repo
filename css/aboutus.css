@@ -150,9 +150,10 @@ opacity:0;
 width:1260px;
 height:400px;
 z-index:1;
-background-color:rgba(20,20,20,0.5);
+background-color:rgba(20,20,20,0.7);
 transform:translate(1500px,0px);
 -webkit-transform:translate(1500px,0px);
+border-radius:10px ;
 }
 /*----------------------------------------*/
 .aboutuscontent
@@ -161,15 +162,14 @@ transform:translate(1500px,0px);
     width:617px;
     margin:5px;
     height:390px;
-    border:1px solid black;
     position:relative;
     overflow:hidden;
 }
 .aboutuscontenttitle
 {
-font-size:30px;
+font-weight:700 ;
 font-style: oblique;
-margin-right:10px;
+margin:10px ;
 }
 .aboutuscontent1
 {
@@ -180,7 +180,7 @@ width:300px;
 {
 float:right;
 width:290px;
-height:100px;
+height:160px;
 border:1px solid black;
 margin:5px;
 }

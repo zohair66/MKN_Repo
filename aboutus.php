@@ -60,7 +60,7 @@ require_once("includes/includes.php");
 <div id="menuthispage">
 <div id="main">
 <div id="home" class="menu" onmouseenter="select1()" onmouseleave="out1()"><a href="home.php" id="subhome" class="submenu"></a><p class="text">خانه</p></div>
-<div id="aboutus" class="menu" onmouseenter="select2()" onmouseleave="out2()" ><a href="#" id="subaboutus" class="submenu"></a><p class="text">درباره ما</p></div>
+<div id="aboutus" class="menu"  ><a href="#" id="subaboutus" class="submenu"></a><p class="text">درباره ما</p></div>
     <div id="service" class="menu" onmouseenter="select3()" onmouseleave="out3()"><a href="services.php" id="subservice" class="submenu"></a>
 
         <p class="text">خدمات ما</p></div>
