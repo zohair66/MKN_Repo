@@ -91,6 +91,7 @@ require_once("includes/includes.php");
         $aboutus2 = aboutus2::getAllaboutus2();
     ?>
 <div id="content">
+
 <div id="aboutuscontent1" class="aboutuscontent">
     <div class="aboutuscontenttitle"><?php echo $aboutus1[0]->title ?></div>
     <div id="aboutuscontent1pictrue" class="aboutuscontent1"><img src="<?php echo $aboutus1[0]->picturelink ?>"/></div>
@@ -99,17 +100,32 @@ require_once("includes/includes.php");
 <div id="aboutuscontent2" class="aboutuscontent">
     <div class="aboutuscontenttitle"><?php echo $aboutus2[0]->title ?></div>
     <div>
-        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink1 ?>" /></div>
-        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink2 ?>" /></div>
-        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink3 ?>" /></div>
-        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink4 ?>" /></div>
+        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink1 ?>"  onclick="image1()"/></div>
+        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink2 ?>" onclick="image2()"/></div>
+        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink3 ?>" onclick="image3()"/></div>
+        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink4 ?>" onclick="image4()"/></div>
     </div>
 </div>
 
 </div>
+
 </div>
 <p  class="footer" id="footername">تمام حقوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>
 <p class="footer" id="footeraddress"><br />آدرس:اصفهان خیابان میرداماد بعد از چهارراه زاهد طبقه فوقانی دفتر اسناد رسمی 410 </p>
 <p class="footer" id="footertelefon">تلفن:32352016-031 تلفکس:32362237-031</p>
+<div id="black"></div>
+<div  id="picure1" class="picure"><img src="img/airanslp_A.jpg" onclick="hiddenimage1()"/> </div>
 </body>
+<script>
+    function image1(){
+        document.getElementById('picure1').style.visibility = 'visible';
+        document.getElementById('black').style.visibility = 'visible';
+        document.getElementById('black').style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    }
+    function hiddenimage1(){
+        document.getElementById('picure1').style.visibility = 'hidden';
+        document.getElementById('black').style.backgroundColor = "rgba(0, 0, 0, 0.0)";
+        document.getElementById('black').style.visibility = 'hidden';
+    }
+</script>
 </html>
