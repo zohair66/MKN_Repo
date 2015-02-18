@@ -109,19 +109,23 @@ require_once("includes/includes.php");
 
 </div>
 
-    <div id="servicesmore1" class="servicesmore"><p class="servicesmoretitle"></p>
+    <div id="servicesmore1" class="servicesmore">
+<!--        <p class="servicesmoretitle"></p>-->
 
         <p class="servicesmoretext"></p><a href="#" class="servicesmoreback" onclick="moreinfo1back(event)">بازگشت</a>
     </div>
-    <div id="servicesmore2" class="servicesmore"><p class="servicesmoretitle"></p>
+    <div id="servicesmore2" class="servicesmore">
+<!--        <p class="servicesmoretitle"></p>-->
 
         <p class="servicesmoretext"></p><a href="#" class="servicesmoreback" onclick="moreinfo2back(event)">بازگشت</a>
     </div>
-    <div id="servicesmore3" class="servicesmore"><p class="servicesmoretitle"></p>
+    <div id="servicesmore3" class="servicesmore">
+<!--        <p class="servicesmoretitle"></p>-->
 
         <p class="servicesmoretext"></p><a href="#" class="servicesmoreback" onclick="moreinfo3back(event)">بازگشت</a>
     </div>
-    <div id="servicesmore4" class="servicesmore"><p class="servicesmoretitle"></p>
+    <div id="servicesmore4" class="servicesmore">
+<!--        <p class="servicesmoretitle"></p>-->
 
         <p class="servicesmoretext"></p><a href="#" class="servicesmoreback" onclick="moreinfo4back(event)">بازگشت</a>
     </div>
