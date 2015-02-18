@@ -3,15 +3,19 @@ if(isset($_POST['piclink1'])){
     $servicearray['piclink1'] = $_POST['piclink1'];
     $servicearray['link1'] = $_POST['link1'];
     $servicearray['text1'] = $_POST['content1'];
+    $servicearray['morecontent1'] = $_POST['morecontent1'];
     $servicearray['piclink2'] = $_POST['piclink2'];
     $servicearray['link2'] = $_POST['link2'];
     $servicearray['text2'] = $_POST['content2'];
+    $servicearray['morecontent2'] = $_POST['morecontent2'];
     $servicearray['piclink3'] = $_POST['piclink3'];
     $servicearray['link3'] = $_POST['link3'];
     $servicearray['text3'] = $_POST['content3'];
+    $servicearray['morecontent3'] = $_POST['morecontent3'];
     $servicearray['piclink4'] = $_POST['piclink4'];
     $servicearray['link4'] = $_POST['link4'];
     $servicearray['text4'] = $_POST['content4'];
+    $servicearray['morecontent4'] = $_POST['morecontent4'];
     if(Services::Updateservices($servicearray))
         Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
 }
@@ -50,10 +54,19 @@ $services = Services::getAllServiceRecordes();
                         <textarea name="content<?php echo $service->id ?>" id="area<?php echo $service->id ?>"><?php echo $service->text ?></textarea>
                     </td>
                 </tr>
+                                <tr>
+                    <td width="100">
+متن ادامه مطلب :
+                    </td>
+                    <td>
+                        <textarea name="morecontent<?php echo $service->id ?>" id="aream<?php echo $service->id ?>"><?php echo $service->morecontent ?></textarea>
+                    </td>
+                </tr>
             </table>
             <script src="ckeditor/ckeditor.js"></script>
             <script>
                 CKEDITOR.replace('area<?php echo $service->id ?>', {language: 'fa'});
+                CKEDITOR.replace('aream<?php echo $service->id ?>', {language: 'fa'});
             </script>
             </br>
         <?php
