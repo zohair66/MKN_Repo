@@ -93,7 +93,7 @@ require_once("includes/includes.php");
     if($service_nums>0) {
         foreach ($Services as $service) {
             ?>
-            <div class="servicescontent">
+            <div id="servicescontent<?php echo $service->id ?>" class="servicescontent">
             <img  src="<?php echo $service->piclink ?>" class="servisespicture"/>
             <a href="#" class="sservicesreadmore" onclick="moreinfo<?php echo $service->id ?>(event)">
 			اطلاعات بیشتر</a>

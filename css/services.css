@@ -159,17 +159,28 @@ border-radius:10px;
 .servicescontent
 {
     float:right;
-    width:617px;
+    width:590px;
     margin:5px;
-    height:190px;
+    height:170px;
     position:relative;
     overflow:hidden;
+    padding: 10px;
 }
+
+#servicescontent1{
+    border-bottom:1px double #b2b2b2 ;
+    
+}
+#servicescontent2{
+    border-bottom:1px double #b2b2b2 ;
+}
+
 .servisespicture{
     float:right;
 }
 .servicestext{
-    margin-right: 100px;
+
+    text-align: justify;
 }
 
 .sservicesreadmore
