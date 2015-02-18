@@ -178,15 +178,6 @@ function movefunction() {
     firstabsorb = 80;
     inout = 0;
     i = 0;
-    //--------------------------------
- //   main.onmouseout = function (event) {
- //       container.style.transitionDuration = "0.3s";
- //       container.style.transform = "translate(-40px,40px)";
- //       firstabsorb = 80; //first distance for absorbtion
- //       i = 0;
- //       inout = 0;
-  //  }
-    //------------------------------------
     main.onmousemove = function (event) {
         mousepositionx = event.pageX - continerrect.left - 60;//100px is (div width/2)
         mousepositiony = event.pageY -window.pageYOffset -continerrect.top - 60;//100px is (div height/2)
@@ -197,14 +188,14 @@ function movefunction() {
             firstabsorb = 120;
             inout = 1;
             if (i > -0.3) {
-                i = i - 0.06;
+                i = i - 0.02;
             }
             else {
                 i = -0.3;
             }
         }
         else if ((distance > 80) && (distance < 150) && (inout == 0)) {
-            container.style.transitionDuration = "0.0s";
+            container.style.transitionDuration = "0.3s";
             var ramp = mousepositiony / mousepositionx;
             ramp = 15 * (1 / (1 + Math.exp(-ramp)) - 0.5);
 

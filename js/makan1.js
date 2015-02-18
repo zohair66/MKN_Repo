@@ -169,7 +169,7 @@ function out6() {
                 firstabsorb = 120;
                 inout = 1;
                 if (i > -0.3) {
-                    i = i - 0.06;
+                    i = i - 0.02;
                 }
                 else {
                     i = -0.3;
