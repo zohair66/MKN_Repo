@@ -113,19 +113,40 @@ require_once("includes/includes.php");
 <p  class="footer" id="footername">تمام حقوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>
 <p class="footer" id="footeraddress"><br />آدرس:اصفهان خیابان میرداماد بعد از چهارراه زاهد طبقه فوقانی دفتر اسناد رسمی 410 </p>
 <p class="footer" id="footertelefon">تلفن:32352016-031 تلفکس:32362237-031</p>
-<div id="black"></div>
-<div  id="picure1" class="picure"><img src="img/airanslp_A.jpg" onclick="hiddenimage1()"/> </div>
+<div id="black1" class="black" onclick="hiddenimage1()" ></div>
+<div  id="picture1" class="picture"><img src="img/airanslp_A.jpg"/> </div>
+<div  id="picture2" class="picture"><img src="img/mycomlife_A.jpg"/> </div>
+<div  id="picture3" class="picture"><img src="img/loknatesf_A.jpg"/> </div>
+<div  id="picture4" class="picture"><img src="img/kianaonline_A.jpg"/> </div>
 </body>
 <script>
     function image1(){
-        document.getElementById('picure1').style.visibility = 'visible';
-        document.getElementById('black').style.visibility = 'visible';
-        document.getElementById('black').style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        document.getElementById('picture1').style.visibility = 'visible';
+        document.getElementById('black1').style.visibility = 'visible';
+        document.getElementById('black1').style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    }
+    function image2(){
+        document.getElementById('picture2').style.visibility = 'visible';
+        document.getElementById('black1').style.visibility = 'visible';
+        document.getElementById('black1').style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    }
+    function image3(){
+        document.getElementById('picture3').style.visibility = 'visible';
+        document.getElementById('black1').style.visibility = 'visible';
+        document.getElementById('black1').style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    }
+    function image4(){
+        document.getElementById('picture4').style.visibility = 'visible';
+        document.getElementById('black1').style.visibility = 'visible';
+        document.getElementById('black1').style.backgroundColor = "rgba(0, 0, 0, 0.8)";
     }
     function hiddenimage1(){
-        document.getElementById('picure1').style.visibility = 'hidden';
-        document.getElementById('black').style.backgroundColor = "rgba(0, 0, 0, 0.0)";
-        document.getElementById('black').style.visibility = 'hidden';
+        document.getElementById('picture1').style.visibility = 'hidden';
+        document.getElementById('picture2').style.visibility = 'hidden';
+        document.getElementById('picture3').style.visibility = 'hidden';
+        document.getElementById('picture4').style.visibility = 'hidden';
+        document.getElementById('black1').style.backgroundColor = "rgba(0, 0, 0, 0.0)";
+        document.getElementById('black1').style.visibility = 'hidden';
     }
 </script>
 </html>
