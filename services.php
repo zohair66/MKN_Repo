@@ -95,7 +95,8 @@ require_once("includes/includes.php");
             ?>
             <div class="servicescontent">
             <img  src="<?php echo $service->piclink ?>" class="servisespicture"/>
-            <a href="<?php echo $service->sublink ?>" class="sservicesreadmore" >اطلاعات بیشتر</a>
+            <a href="#" class="sservicesreadmore" onclick="moreinfo<?php echo $service->id ?>(event)">
+			اطلاعات بیشتر</a>
             <p class="servicestext"><?php echo $service->text ?></p></div>
         <?php
         }
@@ -107,9 +108,104 @@ require_once("includes/includes.php");
 
 
 </div>
+
+    <div id="servicesmore1" class="servicesmore"><p class="servicesmoretitle"></p>
+
+        <p class="servicesmoretext"></p><a href="#" class="servicesmoreback" onclick="moreinfo1back(event)">بازگشت</a>
+    </div>
+    <div id="servicesmore2" class="servicesmore"><p class="servicesmoretitle"></p>
+
+        <p class="servicesmoretext"></p><a href="#" class="servicesmoreback" onclick="moreinfo2back(event)">بازگشت</a>
+    </div>
+    <div id="servicesmore3" class="servicesmore"><p class="servicesmoretitle"></p>
+
+        <p class="servicesmoretext"></p><a href="#" class="servicesmoreback" onclick="moreinfo3back(event)">بازگشت</a>
+    </div>
+    <div id="servicesmore4" class="servicesmore"><p class="servicesmoretitle"></p>
+
+        <p class="servicesmoretext"></p><a href="#" class="servicesmoreback" onclick="moreinfo4back(event)">بازگشت</a>
+    </div>
+
 </div>
+
+
 <p  class="footer" id="footername">تمام حقوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>
 <p class="footer" id="footeraddress"><br />آدرس:اصفهان خیابان میرداماد بعد از چهارراه زاهد طبقه فوقانی دفتر اسناد رسمی 410 </p>
 <p class="footer" id="footertelefon">تلفن:32352016-031 تلفکس:32362237-031</p>
+
+<script>
+    function moreinfo1(event) {
+        content = document.getElementById("content");
+        content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
+        servicesmore1=document.getElementById("servicesmore1");
+        servicesmore1.style.visibility = "visible";
+        servicesmore1.style.transform = "translate(0px,0px)";
+        event.preventDefault();
+    }
+    function moreinfo1back(event) {
+        content = document.getElementById("content");
+        content.style.visibility = "visible";
+        content.style.transform = "translate(0px,0px)";
+        servicesmore1 = document.getElementById("servicesmore1");
+        servicesmore1.style.transform = "translate(1500px,0px)";
+        servicesmore1.style.visibility = "hidden";
+        event.preventDefault();
+    }
+    function moreinfo2(event) {
+        content = document.getElementById("content");
+        content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
+        servicesmore2=document.getElementById("servicesmore2");
+        servicesmore2.style.visibility = "visible";
+        servicesmore2.style.transform = "translate(0px,0px)";
+        event.preventDefault();
+    }
+    function moreinfo2back(event) {
+        content = document.getElementById("content");
+        content.style.visibility = "visible";
+        content.style.transform = "translate(0px,0px)";
+        servicesmore2 = document.getElementById("servicesmore2");
+        servicesmore2.style.transform = "translate(1500px,0px)";
+        servicesmore2.style.visibility = "hidden";
+        event.preventDefault();
+    }
+    function moreinfo3(event) {
+        content = document.getElementById("content");
+        content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
+        servicesmore3=document.getElementById("servicesmore3");
+        servicesmore3.style.visibility = "visible";
+        servicesmore3.style.transform = "translate(0px,0px)";
+        event.preventDefault();
+    }
+    function moreinfo3back(event) {
+        content = document.getElementById("content");
+        content.style.visibility = "visible";
+        content.style.transform = "translate(0px,0px)";
+        servicesmore3 = document.getElementById("servicesmore3");
+        servicesmore3.style.transform = "translate(1500px,0px)";
+        servicesmore3.style.visibility = "hidden";
+        event.preventDefault();
+    }
+    function moreinfo4(event) {
+        content = document.getElementById("content");
+        content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
+        servicesmore4=document.getElementById("servicesmore4");
+        servicesmore4.style.visibility = "visible";
+        servicesmore4.style.transform = "translate(0px,0px)";
+        event.preventDefault();
+    }
+    function moreinfo4back(event) {
+        content = document.getElementById("content");
+        content.style.visibility = "visible";
+        content.style.transform = "translate(0px,0px)";
+        servicesmore4 = document.getElementById("servicesmore4");
+        servicesmore4.style.transform = "translate(1500px,0px)";
+        servicesmore4.style.visibility = "hidden";
+        event.preventDefault();
+    }
+</script>
 </body>
 </html>

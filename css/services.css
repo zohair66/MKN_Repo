@@ -33,6 +33,7 @@ margin-right:auto;
 margin-left:auto;
 margin-right:auto;
 width:1260px;
+    height: 610px;
 position: relative;
 }
 
@@ -69,8 +70,6 @@ height:420px;
     width:200px;
     height:200px;
     margin:5px;
-
-  
 }
 #subhome
 {
@@ -147,13 +146,14 @@ opacity:0;
 }
 #content
 {
-/*position:absolute;*/
+position:absolute;
 width:1260px;
 height:400px;
 z-index:1;
-background-color:rgba(20,20,20,0.5);
+background-color:rgba(20,20,20,0.7);
 transform:translate(1500px,0px);
 -webkit-transform:translate(1500px,0px);
+border-radius:10px;
 }
 /*----------------------------------------*/
 .servicescontent
@@ -162,7 +162,6 @@ transform:translate(1500px,0px);
     width:617px;
     margin:5px;
     height:190px;
-    border:1px solid black;
     position:relative;
     overflow:hidden;
 }
@@ -175,12 +174,60 @@ transform:translate(1500px,0px);
 
 .sservicesreadmore
 {
-    position: absolute;
-    left:5px;
-    bottom:5px;
+    clear:both;
+    position:absolute;
+    left: 10px;
+    bottom: 3px;
     text-decoration: none;
+    color: #B7B7B7;
+}
+.sservicesreadmore:hover {
+    color: #048CAD;
+    transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+}
+/*-----------------------*/
+.servicesmore
+{
+    width:1260px;
+    height:400px;
+    background-color:rgba(20,20,20,0.7);
+    position: absolute;
+    transform:translate(1500px,0px) ;
+    transition-duration: 2s;
+    border-radius:10px;
+    visibility: hidden;
+}
+.servicesmoretitle
+{
+    font-style:oblique;
+    font-weight:700;
+    margin:10px ;
+}
+.servicesmoretext{
+    font-size:20px;
+    margin-right:10px ;
+    margin-left:10px ;
+    text-align: justify;
+    color: #dff1ff;
+    overflow: auto;
 }
 
+.servicesmoreback {
+    font-weight: 700;
+    position: absolute;
+    left: 10px;
+    bottom: 3px;
+    text-decoration: none;
+    color: #B7B7B7;
+}
+
+.servicesmoreback:hover {
+    color: #048CAD;
+    transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+}
+/*-----------------------*/
 /*----------------------------------------*/
 .footer
 {
