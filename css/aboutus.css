@@ -75,8 +75,8 @@ body
 
 #logocontainer
 {
-height:180px;
-width:400px;
+    height:130px;
+    width:320px;
 margin-left:auto;
 margin-right:auto;
 }
@@ -232,6 +232,8 @@ float: right;
 #aboutuscontent1pictrue{
     margin:5px ;
     width:250px;
+    border:1px solid #000000;
+    height: 300px;
 }
 #aboutuscontent1text{
     margin:5px;
