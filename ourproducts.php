@@ -65,7 +65,7 @@ require_once("includes/includes.php");
     <div id="service" class="menu" onmouseenter="select3()" onmouseleave="out3()"><a href="services.php" id="subservice" class="submenu"></a>
 
         <p class="text">خدمات ما</p></div>
-<div id="products" class="menu" onmouseenter="select4()" onmouseleave="out4()"><a href="#" id="subproducts"class="submenu"></a><p class="text">نمونه کارها</p></div>
+<div id="products" class="menu" onmouseenter="select4()" onmouseleave="out4()"><a href="#" id="subproducts"class="submenu"></a><p class="text">تعرفه ها</p></div>
     <div id="blog" class="menu" onmouseenter="select5()" onmouseleave="out5()"><a href="news.php" id="subblog" class="submenu"></a>
 
         <p class="text">آخرین اخبار</p></div>
@@ -87,7 +87,7 @@ require_once("includes/includes.php");
 <div id="content">
 
     <div id="ourprodutstitle">
-        نمونه کارها
+        تعرفه ها
     </div>
 
 

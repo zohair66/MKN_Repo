@@ -217,12 +217,13 @@ height:340px;
 
 }
 #homecontent1text{
-    width: 250px;
-    height: 300px;
+    width: 240px;
+    height: 280px;
+    padding: 10px;
+    font-size: 18px;
     text-align: justify;
+    color: #dff1ff;
     overflow: auto;
-    direction: rtl;
-    padding: 5px;
 }
 
 #homecontent1picture{
@@ -247,7 +248,7 @@ color: #B7B7B7;
 
 .homecontentmore:hover {
     color: #048CAD;
-    transform: scale(1.2, 1.2);
+    transform: scale(1.15, 1.15);
     -moz-transform: scale(1.2, 1.2);
 }
 
@@ -271,7 +272,7 @@ color: #B7B7B7;
     transition-duration: 0.3s;
     transform: scale(1.2, 1.2);
     -moz-transform: scale(1.2, 1.2);
-    margin-right: 20px;
+
 }
 
 .homecontent3
@@ -295,12 +296,14 @@ color:white;
 
 #homecontent4text
 {
-    width: 270px;
-    margin-right: 5px;
+    width: 260px;
     height: 300px;
-    margin-top:10px;
     direction: rtl;
     overflow: auto;
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+    color: #dff1ff;
 
 }
 /*-----------------------*/
@@ -322,9 +325,8 @@ color:white;
     margin:10px ;
 }
 .homemoretext{
-    font-size:20px;
-    margin-right:10px ;
-    margin-left:10px ;
+    padding: 10px;
+    font-size: 18px;
     text-align: justify;
     color: #dff1ff;
     overflow: auto;

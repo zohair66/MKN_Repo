@@ -49,8 +49,6 @@
     background: #7d7d7d;
 }
 
-
-
 *{
     padding:0px;
     margin:0px;
@@ -232,16 +230,19 @@ float: right;
 #aboutuscontent1pictrue{
     margin:5px ;
     width:250px;
-    border:1px solid #000000;
+    border:3px solid beige;
     height: 300px;
 }
 #aboutuscontent1text{
     margin:5px;
-    width:330px;
+    width:320px;
     height:300px ;
     overflow:auto;
     text-align: justify;
-    padding: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: #dff1ff;
+
 }
 
 .aboutusconten2

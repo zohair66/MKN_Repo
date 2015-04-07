@@ -165,6 +165,9 @@ border-radius:10px;
     position:relative;
     overflow:hidden;
     padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+    color: #dff1ff;
 }
 
 #servicescontent1{
@@ -200,14 +203,15 @@ border-radius:10px;
 /*-----------------------*/
 .servicesmore
 {
-    width:1260px;
-    height:400px;
+    width:1250px;
+    height:390px;
     background-color:rgba(20,20,20,0.7);
     position: absolute;
     transform:translate(1500px,0px) ;
     transition-duration: 2s;
     border-radius:10px;
     visibility: hidden;
+    padding: 10px;
 }
 .servicesmoretitle
 {
@@ -217,8 +221,6 @@ border-radius:10px;
 }
 .servicesmoretext{
     font-size:20px;
-    margin-right:10px ;
-    margin-left:10px ;
     text-align: justify;
     color: #dff1ff;
     overflow: auto;
