@@ -3,15 +3,19 @@ if(isset($_POST['piclink1'])){
     $servicearray['piclink1'] = $_POST['piclink1'];
     $servicearray['link1'] = $_POST['link1'];
     $servicearray['text1'] = $_POST['content1'];
+    $servicearray['moretext1'] = $_POST['moretext1'];
     $servicearray['piclink2'] = $_POST['piclink2'];
     $servicearray['link2'] = $_POST['link2'];
     $servicearray['text2'] = $_POST['content2'];
+    $servicearray['moretext2'] = $_POST['moretext2'];
     $servicearray['piclink3'] = $_POST['piclink3'];
     $servicearray['link3'] = $_POST['link3'];
     $servicearray['text3'] = $_POST['content3'];
+    $servicearray['moretext3'] = $_POST['moretext3'];
     $servicearray['piclink4'] = $_POST['piclink4'];
     $servicearray['link4'] = $_POST['link4'];
     $servicearray['text4'] = $_POST['content4'];
+    $servicearray['moretext4'] = $_POST['moretext4'];
     if(Ourproducts::Updateproducts($servicearray))
         Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
 }
@@ -19,7 +23,7 @@ $products = Ourproducts::getAllProducts();
 ?>
 
 <div class="centerpanel">
-    <div class="centerpanelheader">ویرایش نمونه کارها</div>
+    <div class="centerpanelheader">ویرایش تعرفه ها</div>
     <form method="post">
         <?php
         foreach($products as $product){
@@ -48,6 +52,14 @@ $products = Ourproducts::getAllProducts();
                     </td>
                     <td>
                         <textarea name="content<?php echo $product->id ?>" id="area<?php echo $product->id ?>"><?php echo $product->text ?></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="200">
+                        ادامه مطلب :
+                    </td>
+                    <td>
+                        <input style="height:500px;width:500px"  type="text" name="moretext<?php echo $product->id ?>" value="<?php echo $product->moretext ?>" />
                     </td>
                 </tr>
             </table>

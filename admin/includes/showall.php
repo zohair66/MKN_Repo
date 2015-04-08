@@ -32,7 +32,7 @@ $fullname = $_SESSION['fname'] . " " . $_SESSION['lname'];
                     <a href="?action=ServicesEdit">صفحه خدمات ما</a>
                 </li>
                 <li>
-                    <a href="?action=KhadamatEdit">صفحه محصولات ما</a>
+                    <a href="?action=TarefeEdit">صفحه تعرفه ها</a>
                 </li>
                 <li>
                     <a href="?action=NewsEdit">صفحه آخرین اخبار</a>
@@ -62,7 +62,7 @@ $fullname = $_SESSION['fname'] . " " . $_SESSION['lname'];
                 include('aboutusedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "ServicesEdit"){
                 include('servicedit.php');
-            }elseif (isset( $_GET["action"]) and $_GET["action"] == "KhadamatEdit"){
+            }elseif (isset( $_GET["action"]) and $_GET["action"] == "TarefeEdit"){
                 include('productedit.php');
             }elseif (isset( $_GET["action"]) and $_GET["action"] == "NewsEdit"){
                 include('newsedit.php');
