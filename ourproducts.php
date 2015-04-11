@@ -100,9 +100,9 @@ require_once("includes/includes.php");
         if ($product_nums>0){
             foreach($products as $product) {
                 ?>
-                <div class="pictureandtext">
+                <div id="ourproductscontent<?php echo $product->id ?>" class="pictureandtext">
                     <div class="picture"><img src="<?php echo "$product->piclink" ?>"/></div>
-                    <div class="ourproductstext"><a href="<?php echo "$product->textlink" ?>"><?php echo "$product->text" ?></a></div>
+                    <div class="ourproductstext"><a href="#" class="ourproductslink" onclick="moreinfo<?php echo $product->id ?>(event)"><?php echo "$product->text" ?></a></div>
                 </div>
             <?php
             }
@@ -113,9 +113,103 @@ require_once("includes/includes.php");
 
     </div>
 </div>
+    <div id="ourproductsmore1" class="ourproductsmore">
+        <!--        <p class="servicesmoretitle"></p>-->
+
+        <p class="ourproductsmoretext"><?php echo $Services[0]->morecontent ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo1back(event)">بازگشت</a>
+    </div>
+    <div id="ourproductsmore2" class="ourproductsmore">
+        <!--        <p class="servicesmoretitle"></p>-->
+
+        <p class="ourproductsmoretext"><?php echo $Services[1]->morecontent ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo2back(event)">بازگشت</a>
+    </div>
+    <div id="ourproductsmore3" class="ourproductsmore">
+        <!--        <p class="servicesmoretitle"></p>-->
+
+        <p class="ourproductsmoretext"><?php echo $Services[2]->morecontent ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo3back(event)">بازگشت</a>
+    </div>
+    <div id="ourproductsmore4" class="ourproductsmore">
+        <!--        <p class="servicesmoretitle"></p>-->
+
+        <p class="ourproductsmoretext"><?php echo $Services[3]->morecontent ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo4back(event)">بازگشت</a>
+    </div>
 </div>
 <p  class="footer" id="footername">تمام حقوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>
 <p class="footer" id="footeraddress"><br />آدرس:اصفهان خیابان میرداماد بعد از چهارراه زاهد طبقه فوقانی دفتر اسناد رسمی 410 </p>
 <p class="footer" id="footertelefon">تلفن:32352016-031 تلفکس:32362237-031</p>
+<script>
+    function moreinfo1(event) {
+        content = document.getElementById("content");
+        content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
+        servicesmore1=document.getElementById("ourproductsmore1");
+        servicesmore1.style.visibility = "visible";
+        servicesmore1.style.transform = "translate(0px,0px)";
+        event.preventDefault();
+    }
+    function moreinfo1back(event) {
+        content = document.getElementById("content");
+        content.style.visibility = "visible";
+        content.style.transform = "translate(0px,0px)";
+        servicesmore1 = document.getElementById("ourproductsmore1");
+        servicesmore1.style.transform = "translate(1500px,0px)";
+        servicesmore1.style.visibility = "hidden";
+        event.preventDefault();
+    }
+    function moreinfo2(event) {
+        content = document.getElementById("content");
+        content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
+        servicesmore2=document.getElementById("ourproductsmore2");
+        servicesmore2.style.visibility = "visible";
+        servicesmore2.style.transform = "translate(0px,0px)";
+        event.preventDefault();
+    }
+    function moreinfo2back(event) {
+        content = document.getElementById("content");
+        content.style.visibility = "visible";
+        content.style.transform = "translate(0px,0px)";
+        servicesmore2 = document.getElementById("ourproductsmore2");
+        servicesmore2.style.transform = "translate(1500px,0px)";
+        servicesmore2.style.visibility = "hidden";
+        event.preventDefault();
+    }
+    function moreinfo3(event) {
+        content = document.getElementById("content");
+        content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
+        servicesmore3=document.getElementById("ourproductsmore3");
+        servicesmore3.style.visibility = "visible";
+        servicesmore3.style.transform = "translate(0px,0px)";
+        event.preventDefault();
+    }
+    function moreinfo3back(event) {
+        content = document.getElementById("content");
+        content.style.visibility = "visible";
+        content.style.transform = "translate(0px,0px)";
+        servicesmore3 = document.getElementById("ourproductsmore3");
+        servicesmore3.style.transform = "translate(1500px,0px)";
+        servicesmore3.style.visibility = "hidden";
+        event.preventDefault();
+    }
+    function moreinfo4(event) {
+        content = document.getElementById("content");
+        content.style.transform = "translate(1500px,0px)";
+        content.style.visibility = "hidden";
+        servicesmore4=document.getElementById("ourproductsmore4");
+        servicesmore4.style.visibility = "visible";
+        servicesmore4.style.transform = "translate(0px,0px)";
+        event.preventDefault();
+    }
+    function moreinfo4back(event) {
+        content = document.getElementById("content");
+        content.style.visibility = "visible";
+        content.style.transform = "translate(0px,0px)";
+        servicesmore4 = document.getElementById("ourproductsmore4");
+        servicesmore4.style.transform = "translate(1500px,0px)";
+        servicesmore4.style.visibility = "hidden";
+        event.preventDefault();
+    }
+</script>
 </body>
 </html>
