@@ -51,7 +51,7 @@ $products = Ourproducts::getAllProducts();
                         متن :
                     </td>
                     <td>
-                        <textarea name="content<?php echo $product->id ?>" id="area<?php echo $product->id ?>"><?php echo $product->text ?></textarea>
+                        <textarea style="height:500px;width:711px;text-align: justify;padding: 10px" name="content<?php echo $product->id ?>"><?php echo $product->text ?></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -59,14 +59,14 @@ $products = Ourproducts::getAllProducts();
                         ادامه مطلب :
                     </td>
                     <td>
-                        <input style="height:500px;width:500px"  type="text" name="moretext<?php echo $product->id ?>" value="<?php echo $product->moretext ?>" />
+                        <textarea style="height:500px;width:711px;text-align: justify;padding: 10px"  type="text" name="moretext<?php echo $product->id ?>" value="<?php echo $product->moretext ?>" ></textarea>
                     </td>
                 </tr>
             </table>
-            <script src="ckeditor/ckeditor.js"></script>
+<!--            <script src="ckeditor/ckeditor.js"></script>
             <script>
-                CKEDITOR.replace('area<?php echo $product->id ?>', {language: 'fa'});
-            </script>
+                CKEDITOR.replace('area<?php /*echo $product->id */?>', {language: 'fa'});
+            </script>-->
             </br>
         <?php
         }
