@@ -42,7 +42,7 @@ $aboutus2s = aboutus2::getAllaboutus2();
             </tr>
             <tr>
                 <td colspan="2">
-                    <textarea name="content1" id="area"><?php echo $aboutus1s[0]->textcontent ?></textarea>
+                    <textarea style="height:500px;width:711px;text-align: justify;padding: 10px;margin-right: 103px " name="content1"><?php echo $aboutus1s[0]->textcontent ?></textarea>
                 </td>
             </tr>
             </br>
@@ -53,10 +53,10 @@ $aboutus2s = aboutus2::getAllaboutus2();
             </tr>
         </table>
     </form>
-    <script src="ckeditor/ckeditor.js"></script>
+<!--    <script src="ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('area', {language: 'fa'});
-    </script>
+    </script>-->
 
     </br></br>
 
