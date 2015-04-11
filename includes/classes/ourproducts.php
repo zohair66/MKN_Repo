@@ -50,10 +50,10 @@ class Ourproducts extends Table{
         $moretext4 = $productarray['moretext4'];
 
         $query = "INSERT INTO ourproducts (id,piclink,text,textlink,moretext)
-        VALUES (1,'$piclink1','$text1','$link1',$moretext1),
-               (2,'$piclink2','$text2','$link2',$moretext2),
-               (3,'$piclink3','$text3','$link3',$moretext3),\
-               (4,'$piclink4','$text4','$link4',$moretext4) ON DUPLICATE KEY UPDATE
+        VALUES (1,'$piclink1','$text1','$link1','$moretext1'),
+               (2,'$piclink2','$text2','$link2','$moretext2'),
+               (3,'$piclink3','$text3','$link3','$moretext3'),
+               (4,'$piclink4','$text4','$link4','$moretext4') ON DUPLICATE KEY UPDATE
         piclink=VALUES(piclink),text=VALUES(text),textlink=VALUES(textlink),moretext=VALUES(moretext)";
         $result = $conn->query($query);
         if ($result === false) {
