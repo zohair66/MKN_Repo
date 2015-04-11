@@ -66,7 +66,7 @@ $homecontent4 = homecontent4::getAllHomeContent4();
                     متن خلاصه :
                 </td>
                 <td colspan="2">
-                    <textarea name="content" id="area"><?php echo $homecontent1[0]->content ?></textarea>
+                    <textarea name="content" style="height:500px;width:711px;text-align: justify;padding: 10px "><?php echo $homecontent1[0]->content ?></textarea>
                 </td>
             </tr>
             </br>
@@ -75,7 +75,7 @@ $homecontent4 = homecontent4::getAllHomeContent4();
                     متن اصلی :
                 </td>
                 <td colspan="2">
-                    <textarea name="maincontent" id="area12"><?php echo $homecontent1[0]->maincontent ?></textarea>
+                    <textarea name="maincontent" style="height:500px;width:711px;text-align: justify;padding: 10px " ><?php echo $homecontent1[0]->maincontent ?></textarea>
                 </td>
             </tr>
             <tr>
@@ -85,11 +85,11 @@ $homecontent4 = homecontent4::getAllHomeContent4();
             </tr>
         </table>
     </form>
-    <script src="ckeditor/ckeditor.js"></script>
+<!--    <script src="ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('area', {language: 'fa'});
         CKEDITOR.replace('area12', {language: 'fa'});
-    </script>
+    </script>-->
 
     </br></br>
 
@@ -121,14 +121,14 @@ $homecontent4 = homecontent4::getAllHomeContent4();
                             متن توضیحات :
                         </td>
                         <td colspan="2">
-                            <textarea name="bulletcontent<?php echo $homecontent2->id ?>" id="areahome2_<?php echo $homecontent2->id ?>"><?php echo $homecontent2->content ?></textarea>
+                            <textarea style="height:500px;width:711px;text-align: justify;padding: 10px " name="bulletcontent<?php echo $homecontent2->id ?>"><?php echo $homecontent2->content ?></textarea>
                         </td>
                     </tr>
             </table>
-            <script src="ckeditor/ckeditor.js"></script>
+            <!--<script src="ckeditor/ckeditor.js"></script>
             <script>
-                 CKEDITOR.replace('areahome2_<?php echo $homecontent2->id ?>', {language: 'fa'});
-            </script>
+                 CKEDITOR.replace('areahome2_<?php /*echo $homecontent2->id */?>', {language: 'fa'});
+            </script>-->
             <?php
                 }
             ?>
