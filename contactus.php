@@ -117,10 +117,9 @@ if(isset($_POST['send'])){
         <div class="contactuscontent">
             <div class="contentheaders"> محل دفتر بر روی نقشه</div>
             <div class="contenttext">
-                <figure class="g_map">
-                    <iframe
-                        src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-                </figure>
+
+                <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:320px;width:397px;"><div id="gmap_canvas" style="height:320px;width:397px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://premium-wordpress-themes.org" id="get-map-data">premium-wordpress-themes.org</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(32.6622335,51.659422800000016),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(32.6622335, 51.659422800000016)});infowindow = new google.maps.InfoWindow({content:"<b>&#1583;&#1601;&#1578;&#1585; &#1605;&#1575;&#1705;&#1575;&#1606;  </b><br/>&#1582;&#1740;&#1575;&#1576;&#1575;&#1606; &#1605;&#1740;&#1585;&#1583;&#1575;&#1605;&#1575;&#1583;<br/> &#1575;&#1589;&#1601;&#1607;&#1575;&#1606;" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
             </div>
         </div>
         <div class="contactuscontent">
