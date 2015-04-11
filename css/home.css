@@ -327,22 +327,22 @@ color:white;
     color:#f5f5f5;
 }
 .homemoretext{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    font-size: 18px;
-    text-align: justify;
-    color: #dff1ff;
-    overflow: auto;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    font-size:18px;
+    text-align:justify;
+    color:#dff1ff;
+    overflow:auto;
 }
 
 .homemoreback {
     font-weight: 700;
-    position: absolute;
-    left: 10px;
-    bottom: 3px;
-    text-decoration: none;
-    color: #B7B7B7;
+    position:absolute;
+    left:10px;
+    bottom:3px;
+    text-decoration:none;
+    color:#B7B7B7;
 }
 
 .homemoreback:hover {
