@@ -104,6 +104,8 @@ require_once("includes/includes.php");
         <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink2 ?>" onclick="image2()"/></div>
         <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink3 ?>" onclick="image3()"/></div>
         <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink4 ?>" onclick="image4()"/></div>
+        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink5 ?>" onclick="image5()"/></div>
+        <div class="aboutusconten2"><img src="<?php echo $aboutus2[0]->piclink6 ?>" onclick="image6()"/></div>
     </div>
 </div>
 

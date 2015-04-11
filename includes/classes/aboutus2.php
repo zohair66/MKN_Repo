@@ -7,7 +7,9 @@ class aboutus2 extends Table{
         "piclink1"=>"",
         "piclink2"=>"",
         "piclink3"=>"",
-        "piclink4"=>""
+        "piclink4"=>"",
+        "piclink5"=>"",
+        "piclink6"=>""
     );
 
     public static function getAllaboutus2(){
@@ -39,8 +41,11 @@ class aboutus2 extends Table{
         $piclink2 = $about2array['piclink2'];
         $piclink3 = $about2array['piclink3'];
         $piclink4 = $about2array['piclink4'];
+        $piclink5 = $about2array['piclink5'];
+        $piclink6 = $about2array['piclink6'];
+
         $query = "UPDATE aboutus2 SET title = '$title' , piclink1 = '$piclink1' ,
-              piclink2 = '$piclink2' , piclink3 = '$piclink3' , piclink4 = '$piclink4' ";
+              piclink2 = '$piclink2' , piclink3 = '$piclink3' , piclink4 = '$piclink4' ,  piclink5 = '$piclink5' ,  piclink6 = '$piclink6' ";
         $result = $conn->query($query);
         if ($result === false) {
             echo("Query failed: " . $conn->error . "<br />\n$query");

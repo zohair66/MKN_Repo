@@ -11,6 +11,8 @@ if(isset($_POST['title1'])){
     $aboutus2array['piclink2'] = $_POST['piclink22'];
     $aboutus2array['piclink3'] = $_POST['piclink23'];
     $aboutus2array['piclink4'] = $_POST['piclink24'];
+    $aboutus2array['piclink5'] = $_POST['piclink25'];
+    $aboutus2array['piclink6'] = $_POST['piclink26'];
     if(aboutus2::UpdateAboutus2($aboutus2array))
         Users::DisplayWar("بروز رسانی با موفقیت صورت گرفت");
 }
@@ -99,6 +101,22 @@ $aboutus2s = aboutus2::getAllaboutus2();
             </td>
             <td>
                 <input size="100" type="text" name="piclink24" value="<?php echo $aboutus2s[0]->piclink4 ?>" />
+            </td>
+        </tr>
+        <tr>
+            <td width="100">
+                لینک عکس پنجم :
+            </td>
+            <td>
+                <input size="100" type="text" name="piclink25" value="<?php echo $aboutus2s[0]->piclink5 ?>" />
+            </td>
+        </tr>
+        <tr>
+            <td width="100">
+                لینک عکس ششم :
+            </td>
+            <td>
+                <input size="100" type="text" name="piclink26" value="<?php echo $aboutus2s[0]->piclink6 ?>" />
             </td>
         </tr>
         </br></br>
