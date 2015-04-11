@@ -120,6 +120,7 @@ require_once("includes/includes.php");
 <div  id="picture2" class="picture"><img src="img/mycomlife_A.jpg"/> </div>
 <div  id="picture3" class="picture"><img src="img/loknatesf_A.jpg"/> </div>
 <div  id="picture4" class="picture"><img src="img/kianaonline_A.jpg"/> </div>
+
 </body>
 <script>
     function image1(){

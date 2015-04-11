@@ -156,7 +156,8 @@ transform:translate(1500px,0px);
 #ourprodutstitle{
     font-size:20px;
     height:30px ;
-    margin:20px;
+    margin:10px;
+    color: #f5f5f5;
 }
 #ourproductscontent{
     height:350px;
