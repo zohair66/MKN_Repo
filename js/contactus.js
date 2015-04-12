@@ -4,11 +4,16 @@
         submenu = document.getElementsByClassName("submenu");
         menu = document.getElementsByClassName("menu");
         main = document.getElementById("main");
+        mainrect=main.getBoundingClientRect();
+        menurect = menu[0].getBoundingClientRect();
+        menurecttop_c=menurect.top-(mainrect.top);
         flag = 0;
         for (i = 6; i < menu.length; i++) {
             menurect = menu[i].getBoundingClientRect();
-            submenu[i - 6].style.top = (menurect.top + 40) + 'px';
-            submenu[i - 6].style.left = (menurect.left + 40) + 'px';
+            menurecttop=menurect.top-(mainrect.top+5);
+            menurectleft=menurect.left-(mainrect.left+5);
+            submenu[i - 6].style.top = (menurecttop + 40) + 'px';
+            submenu[i - 6].style.left = (menurectleft + 40) + 'px';
             submenu[i - 6].style.transitionDuration = "1s";
         }
         main.style.visibility = "visible";
@@ -20,8 +25,9 @@
 
         function movemenu() {
             menurect = menu[k].getBoundingClientRect();
-            submenu[k].style.top = (menurect.top + 40) + 'px';
-            submenu[k].style.left = (menurect.left + 40) + 'px';
+            menurectleft=menurect.left-(mainrect.left);
+            submenu[k].style.top = (menurecttop_c + 40) + 'px';
+            submenu[k].style.left = (menurectleft + 40) + 'px';
             k = k + 1;
             if (k == 6) {
                 clearInterval(myVar);
@@ -46,6 +52,7 @@
             submenu[i].style.position = 'initial';
             submenu[i].style.transitionDuration = "0s";
             submenu[i].style.transform = "translate(-40px,40px)";
+            submenu[i].style.transform = "-ms-translate(-40px,40px)";
             text[i].style.opacity = "1";
             flag = 1;
         }
@@ -53,7 +60,7 @@
     }
 
 
-    if (firstpage == 0) {
+    if(firstpage == 0){
 
         main = document.getElementById("main");
         menu = document.getElementsByClassName("menu");
@@ -70,11 +77,11 @@
             submenu[i].style.position = 'initial';
             submenu[i].style.transitionDuration = "0s";
             submenu[i].style.transform = "translate(-40px,40px)";
+            submenu[i].style.msTransform = "translate(-40px,40px)";
             text[i].style.opacity = "1";
             beforepagemain.style.display = "none";
-
         }
-
+        flag=1;
     }
 }
 function select1() {
@@ -125,23 +132,55 @@ function select6() {
         main.addEventListener("DOMContentLoaded", movefunction(main, container, continerrect));
     }
 }
-
+function out1() {
+    if (flag == 1) {
+        main = menu[0];
+        container = submenu[0];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out2() {
+    if (flag == 1) {
+        main = menu[1];
+        container = submenu[1];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out3() {
+    if (flag == 1) {
+        main = menu[2];
+        container = submenu[2];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out4() {
+    if (flag == 1) {
+        main = menu[3];
+        container = submenu[3];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out5() {
+    if (flag == 1) {
+        main = menu[4];
+        container = submenu[4];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
+function out6() {
+    if (flag == 1) {
+        main = menu[5];
+        container = submenu[5];
+        main.addEventListener("DOMContentLoaded", outfunction(container));
+    }
+}
 function movefunction() {
     firstabsorb = 80;
     inout = 0;
     i = 0;
-    //--------------------------------
-    main.onmouseout = function (event) {
-        container.style.transitionDuration = "0.3s";
-        container.style.transform = "translate(-40px,40px)";
-        firstabsorb = 80; //first distance for absorbtion
-        i = 0;
-        inout = 0;
-    }
-    //------------------------------------
     main.onmousemove = function (event) {
         mousepositionx = event.pageX - continerrect.left - 60;//100px is (div width/2)
-        mousepositiony = event.pageY - window.pageYOffset - continerrect.top - 60;//100px is (div height/2)
+        mousepositiony = event.pageY -window.pageYOffset -continerrect.top - 60;//100px is (div height/2)
         var distance = Math.sqrt(Math.pow(mousepositionx, 2) + Math.pow(mousepositiony, 2));
         if (distance < firstabsorb) {
             container.style.transitionDuration = (0.3 + i) + "s";
@@ -149,14 +188,14 @@ function movefunction() {
             firstabsorb = 120;
             inout = 1;
             if (i > -0.3) {
-                i = i - 0.06;
+                i = i - 0.02;
             }
             else {
                 i = -0.3;
             }
         }
         else if ((distance > 80) && (distance < 150) && (inout == 0)) {
-            container.style.transitionDuration = "0.0s";
+            container.style.transitionDuration = "0.3s";
             var ramp = mousepositiony / mousepositionx;
             ramp = 15 * (1 / (1 + Math.exp(-ramp)) - 0.5);
 
@@ -176,6 +215,15 @@ function movefunction() {
         }
     }
 }
+
+function outfunction(){
+    container.style.transitionDuration = "0.3s";
+    container.style.transform = "translate(-40px,40px)";
+    firstabsorb = 80; //first distance for absorbtion
+    i = 0;
+    inout = 0;
+}
+
 function Invalidname(textbox) {
     var name = document.getElementById('text1').value;
     var pattern = /[آ-ی]{2,}\s[آ-ی]{2,}/;

@@ -228,7 +228,7 @@ border-radius:10px;
     top:30%;
 
 }
-.ourproductslink:hover {
+.ourproductslinktext:hover {
     color: #048CAD;
     transform: scale(1.2, 1.2);
     -moz-transform: scale(1.2, 1.2);

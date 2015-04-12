@@ -22,9 +22,8 @@ if(isset($_POST['send'])){
     <meta charset="utf-8">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>ماکان</title>
-    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/contactus.js"></script>
     <link href="css/contactus.css" rel="stylesheet"/>
-    <script src="js/home.js"></script>
     <?php
     if (isset($_SERVER['HTTP_REFERER'])){
     $get_referer = $_SERVER['HTTP_REFERER'];
@@ -219,4 +218,7 @@ if(isset($_POST['send'])){
 
 <p class="footer" id="footertelefon">تلفن:32352016-031 تلفکس:32362237-031</p>
 </body>
+<script>
+
+</script>
 </html>
