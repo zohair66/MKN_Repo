@@ -116,22 +116,22 @@ require_once("includes/includes.php");
     <div id="ourproductsmore1" class="ourproductsmore">
         <!--        <p class="servicesmoretitle"></p>-->
 
-        <p class="ourproductsmoretext"><?php echo $products[0]->moretext ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo1back(event)">بازگشت</a>
+        <div class="ourproductsmoretext"><?php echo $products[0]->moretext ?></div><a href="#" class="ourproductsmoreback" onclick="moreinfo1back(event)">بازگشت</a>
     </div>
     <div id="ourproductsmore2" class="ourproductsmore">
         <!--        <p class="servicesmoretitle"></p>-->
 
-        <p class="ourproductsmoretext"><?php echo $products[1]->moretext ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo2back(event)">بازگشت</a>
+        <div class="ourproductsmoretext"><?php echo $products[1]->moretext ?></div><a href="#" class="ourproductsmoreback" onclick="moreinfo2back(event)">بازگشت</a>
     </div>
     <div id="ourproductsmore3" class="ourproductsmore">
         <!--        <p class="servicesmoretitle"></p>-->
 
-        <p class="ourproductsmoretext"><?php echo $products[2]->moretext ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo3back(event)">بازگشت</a>
+        <div class="ourproductsmoretext"><?php echo $products[2]->moretext ?></div><a href="#" class="ourproductsmoreback" onclick="moreinfo3back(event)">بازگشت</a>
     </div>
     <div id="ourproductsmore4" class="ourproductsmore">
         <!--        <p class="servicesmoretitle"></p>-->
 
-        <p class="ourproductsmoretext"><?php echo $products[3]->moretext ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo4back(event)">بازگشت</a>
+        <div class="ourproductsmoretext"><?php echo $products[3]->moretext ?></div><a href="#" class="ourproductsmoreback" onclick="moreinfo4back(event)">بازگشت</a>
     </div>
 </div>
 <p  class="footer" id="footername">تمام حقوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>
