@@ -204,8 +204,8 @@ border-radius:10px;
 /*----------------------------------------*/
 .ourproductsmore
 {
-    width:1260px;
-    height:400px;
+    width:1240px;
+    height:380px;
     background-color:rgba(20,20,20,0.7);
     position: absolute;
     transform:translate(1500px,0px) ;
@@ -213,13 +213,14 @@ border-radius:10px;
     border-radius:10px;
     visibility: hidden;
     padding:10px;
+    overflow: auto;
 
 }
 .ourproductsmoretext{
     font-size:20px;
     text-align: justify;
     color: #dff1ff;
-    overflow: auto;
+
 }
 .ourproductsmoreback {
     font-weight: 700;
