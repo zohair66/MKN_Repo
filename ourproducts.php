@@ -107,7 +107,7 @@ require_once("includes/includes.php");
             <?php
             }
         }else{
-            echo "هیچ گونه نمونه کاری وجود ندارد";
+            echo "هیچ گونه تعرفه ای وجود ندارد";
         }
         ?>
 
@@ -116,22 +116,22 @@ require_once("includes/includes.php");
     <div id="ourproductsmore1" class="ourproductsmore">
         <!--        <p class="servicesmoretitle"></p>-->
 
-        <p class="ourproductsmoretext"><?php echo $Services[0]->morecontent ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo1back(event)">بازگشت</a>
+        <p class="ourproductsmoretext"><?php echo $products[0]->moretext ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo1back(event)">بازگشت</a>
     </div>
     <div id="ourproductsmore2" class="ourproductsmore">
         <!--        <p class="servicesmoretitle"></p>-->
 
-        <p class="ourproductsmoretext"><?php echo $Services[1]->morecontent ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo2back(event)">بازگشت</a>
+        <p class="ourproductsmoretext"><?php echo $products[1]->moretext ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo2back(event)">بازگشت</a>
     </div>
     <div id="ourproductsmore3" class="ourproductsmore">
         <!--        <p class="servicesmoretitle"></p>-->
 
-        <p class="ourproductsmoretext"><?php echo $Services[2]->morecontent ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo3back(event)">بازگشت</a>
+        <p class="ourproductsmoretext"><?php echo $products[2]->moretext ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo3back(event)">بازگشت</a>
     </div>
     <div id="ourproductsmore4" class="ourproductsmore">
         <!--        <p class="servicesmoretitle"></p>-->
 
-        <p class="ourproductsmoretext"><?php echo $Services[3]->morecontent ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo4back(event)">بازگشت</a>
+        <p class="ourproductsmoretext"><?php echo $products[3]->moretext ?></p><a href="#" class="ourproductsmoreback" onclick="moreinfo4back(event)">بازگشت</a>
     </div>
 </div>
 <p  class="footer" id="footername">تمام حقوق مادی و معنوی این سایت متعلق به دفتر خدمات طراحی وب سایت ماکان است</p>

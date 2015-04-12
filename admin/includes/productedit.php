@@ -59,7 +59,7 @@ $products = Ourproducts::getAllProducts();
                         ادامه مطلب :
                     </td>
                     <td>
-                        <textarea style="height:500px;width:711px;text-align: justify;padding: 10px"  type="text" name="moretext<?php echo $product->id ?>" value="<?php echo $product->moretext ?>" ></textarea>
+                        <textarea style="height:500px;width:711px;text-align: justify;direction:rtl;padding: 10px"  type="text" name="moretext<?php echo $product->id ?>" ><?php echo $product->moretext ?></textarea>
                     </td>
                 </tr>
             </table>
