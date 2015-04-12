@@ -208,18 +208,25 @@ border-radius:10px;
     border:1px double #b2b2b2 ;
     margin:10px;
 
+
 }
 .ourproductstext a{
     text-decoration:none;
 }
 .ourproductslink
 {
-    clear:both;
-    position:absolute;
     text-decoration: none;
     color: #B7B7B7;
-    height: 100px;
-    padding:aut;
+
+}
+.ourproductslinktext
+{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    top:30%;
+
 }
 .ourproductslink:hover {
     color: #048CAD;

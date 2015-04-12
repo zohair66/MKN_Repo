@@ -102,7 +102,7 @@ require_once("includes/includes.php");
                 ?>
                 <div id="ourproductscontent<?php echo $product->id ?>" class="pictureandtext">
                     <div class="picture"><img src="<?php echo "$product->piclink" ?>"/></div>
-                    <div class="ourproductstext"><a href="#" class="ourproductslink" onclick="moreinfo<?php echo $product->id ?>(event)"><?php echo "$product->text" ?></a></div>
+                    <div class="ourproductstext"><div class="ourproductslinktext"><a href="#" class="ourproductslink" onclick="moreinfo<?php echo $product->id ?>(event)"><?php echo "$product->text" ?></a></div></div>
                 </div>
             <?php
             }
