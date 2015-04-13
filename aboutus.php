@@ -120,6 +120,8 @@ require_once("includes/includes.php");
 <div  id="picture2" class="picture"><img src="img/mycomlife_A.jpg"/> </div>
 <div  id="picture3" class="picture"><img src="img/loknatesf_A.jpg"/> </div>
 <div  id="picture4" class="picture"><img src="img/kianaonline_A.jpg"/> </div>
+<div  id="picture5" class="picture"><img src="img/missvip_A.jpg"/> </div>
+<div  id="picture6" class="picture"><img src="img/niloofarshop_A.jpg"/> </div>
 
 </body>
 <script>
@@ -143,11 +145,23 @@ require_once("includes/includes.php");
         document.getElementById('black1').style.visibility = 'visible';
         document.getElementById('black1').style.backgroundColor = "rgba(0, 0, 0, 0.8)";
     }
+    function image5(){
+        document.getElementById('picture5').style.visibility = 'visible';
+        document.getElementById('black1').style.visibility = 'visible';
+        document.getElementById('black1').style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    }
+    function image6(){
+        document.getElementById('picture6').style.visibility = 'visible';
+        document.getElementById('black1').style.visibility = 'visible';
+        document.getElementById('black1').style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    }
     function hiddenimage1(){
         document.getElementById('picture1').style.visibility = 'hidden';
         document.getElementById('picture2').style.visibility = 'hidden';
         document.getElementById('picture3').style.visibility = 'hidden';
         document.getElementById('picture4').style.visibility = 'hidden';
+        document.getElementById('picture5').style.visibility = 'hidden';
+        document.getElementById('picture6').style.visibility = 'hidden';
         document.getElementById('black1').style.backgroundColor = "rgba(0, 0, 0, 0.0)";
         document.getElementById('black1').style.visibility = 'hidden';
     }
