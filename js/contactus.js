@@ -268,7 +268,3 @@ function Invalidmail(textbox) {
     return true;
 }
 
-
-
-
-

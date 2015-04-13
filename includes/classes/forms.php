@@ -71,7 +71,7 @@ class Forms extends Table{
         $haghhogh = $newform['haghhogh'];
         $rmail = $newform['rmail'];
         $description = $newform['desc'];
-        $query = "INSERT INTO forms (`Name`,phoneNum,email,haghhogh,receivemail,description) VALUES
+        $query = "INSERT INTO forms (`Name`,`phoneNum`,`email`,`haghhogh`,`receivemail`,`description`) VALUES
             ('$name','$phonenum','$email','$haghhogh','$rmail','$description')";
         $result = $conn->query($query);
         if ($result === false) {

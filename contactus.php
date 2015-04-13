@@ -1,6 +1,6 @@
 ﻿<?php
 require_once("includes/includes.php");
-if(isset($_POST['send'])){
+if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])){
     $newform['name'] = $_POST['Name'];
     $newform['phoneNum'] = $_POST['phonenum'];
     $newform['email'] = $_POST['email'];
@@ -12,8 +12,12 @@ if(isset($_POST['send'])){
         $newform['rmail']=false;
     }
     $newform['desc'] = $_POST['description'];
-    if(Forms::insertForm($newform))
-        Users::DisplayWar("اطلاعات شما دریافت گردید، به زودی یکی از کارشناسان ماکان فناور با شما تماس خواهد گرفت");
+    if(Forms::insertForm($newform)){
+        echo 'Message sent!';
+    } else {
+        echo 'Message couldn\'t sent!';
+    }
+    return;
 }
 ?>
 <!DOCTYPE html>
@@ -22,8 +26,11 @@ if(isset($_POST['send'])){
     <meta charset="utf-8">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <title>ماکان</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/contact_form.js"></script>
     <script src="js/contactus.js"></script>
     <link href="css/contactus.css" rel="stylesheet"/>
+
     <?php
     if (isset($_SERVER['HTTP_REFERER'])){
     $get_referer = $_SERVER['HTTP_REFERER'];
@@ -60,6 +67,8 @@ if(isset($_POST['send'])){
         <?php
         }
         ?>
+
+
 
 
     </script>
@@ -130,8 +139,9 @@ if(isset($_POST['send'])){
         <div class="contactuscontent">
             <div class="contentheaders">تماس با ما</div>
             <div class="contenttext">
-                <div id="form">
-                    <form method="post" enctype="text/plain" onsubmit="return validate();">
+                <div class="alert"></div>
+                <div id="formcontainer">
+                    <form id="form" method="post"  onsubmit="return validate();">
 
                         <table>
                             <tr>
@@ -151,7 +161,7 @@ if(isset($_POST['send'])){
                                 <td>
                                     <input type="text" name="phonenum" id="text2" oninvalid="Invalidtel(this);"
                                            oninput="Invalidtel(this);"
-                                           placeholder="09130000000" required="required"/><span id="telspan"
+                                           placeholder="09000000000" required="required"/><span id="telspan"
                                                                                                 style="color: red"></span>
                                 </td>
                             </tr>
@@ -195,8 +205,9 @@ if(isset($_POST['send'])){
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <input type="submit" name="send" value="ارسال"/>
-                                    <input type="reset" name="reset " value="نوسازی"/>
+<!--                                    <input type="submit" name="send" value="ارسال"/>
+                                    <input type="reset" name="reset " value="نوسازی"/>-->
+                                <button name="submit" type="submit" id="submit">Send Email</button>
                                 </td>
                             </tr>
                         </table>
@@ -222,3 +233,4 @@ if(isset($_POST['send'])){
 
 </script>
 </html>
+
