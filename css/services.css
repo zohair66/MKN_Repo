@@ -203,8 +203,8 @@ border-radius:10px;
 /*-----------------------*/
 .servicesmore
 {
-    width:1250px;
-    height:390px;
+    width:1240px;
+    height:380px;
     background-color:rgba(20,20,20,0.7);
     position: absolute;
     transform:translate(1500px,0px) ;
