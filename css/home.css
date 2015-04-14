@@ -177,9 +177,9 @@ width:1260px;
 height:400px;
 background-color:rgba(20,20,20,0.7);
 transform:translate(1500px,0px);
-transition-duration:2s ;
-position:absolute ;
-border-radius:10px ;
+transition-duration:2s;
+position:absolute;
+border-radius:10px;
 }
 .homecontent
 {
@@ -248,7 +248,7 @@ color: #B7B7B7;
 }
 
 .homecontentmore:hover {
-    color: #048CAD;
+color: #048CAD;
     transform: scale(1.15, 1.15);
     -moz-transform: scale(1.2, 1.2);
 }

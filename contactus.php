@@ -13,9 +13,9 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])){
     }
     $newform['desc'] = $_POST['description'];
     if(Forms::insertForm($newform)){
-        echo 'Message sent!';
+        echo 'پیام شما با موفقیت ارسال شد';
     } else {
-        echo 'Message couldn\'t sent!';
+        echo 'لطفا مجدادا سعی کنید';
     }
     return;
 }
@@ -124,7 +124,7 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])){
     <div id="content">
         <div class="contactuscontent">
             <div class="contentheaders"> محل دفتر بر روی نقشه</div>
-            <div class="contenttext">
+            <div id="contentmap" class="contenttext">
 
                 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:320px;width:397px;"><div id="gmap_canvas" style="height:320px;width:397px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://premium-wordpress-themes.org" id="get-map-data">premium-wordpress-themes.org</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(32.6622335,51.659422800000016),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(32.6622335, 51.659422800000016)});infowindow = new google.maps.InfoWindow({content:"<b>&#1583;&#1601;&#1578;&#1585; &#1605;&#1575;&#1705;&#1575;&#1606;  </b><br/>&#1582;&#1740;&#1575;&#1576;&#1575;&#1606; &#1605;&#1740;&#1585;&#1583;&#1575;&#1605;&#1575;&#1583;<br/> &#1575;&#1589;&#1601;&#1607;&#1575;&#1606;" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 
@@ -132,13 +132,13 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])){
         </div>
         <div class="contactuscontent">
             <div class="contentheaders"></div>
-            <div class="contenttext">اصفهان خیابان طیب خیابان میرداماد بعد از چهار راه زاهد طبقه فوقانی دفتر اسناد رسمی
-                410
+            <div id="contentaddress" class="contenttext">اصفهان خیابان طیب خیابان میرداماد بعد از چهار راه زاهد طبقه فوقانی دفتر اسناد رسمی
+              410 </br> تلفن:32352016-031
             </div>
         </div>
-        <div class="contactuscontent">
+        <div  class="contactuscontent">
             <div class="contentheaders">تماس با ما</div>
-            <div class="contenttext">
+            <div id="contentform" class="contenttext">
                 <div class="alert"></div>
                 <div id="formcontainer">
                     <form id="form" method="post"  onsubmit="return validate();">
@@ -189,7 +189,7 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])){
                             </tr>
 
                             <tr>
-                                <td>آیا مایل به دریافت ایمیل هستید؟
+                                <td id="tdmailcheck">آیا مایل به دریافت ایمیل هستید؟
                                 </td>
                                 <td>
                                     <input type="checkbox" name="receivemail" checked="checked"/>
@@ -207,7 +207,7 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])){
                                 <td colspan="2">
 <!--                                    <input type="submit" name="send" value="ارسال"/>
                                     <input type="reset" name="reset " value="نوسازی"/>-->
-                                <button name="submit" type="submit" id="submit">Send Email</button>
+                                <button name="submit" type="submit" id="submit">ارسال</button>
                                 </td>
                             </tr>
                         </table>
